@@ -375,7 +375,12 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 #course {
     background-color: #F6F4F6;
     padding: 12vh 22vw 16vh 22vw;
-    height: 74vh;
+    height: 84vh;
+}
+
+#course hr {
+    border-top: 1px solid #748392;
+    margin: 2vh 1vw 2.8vh 1vw;
 }
 
 #course h2, #course h3, #course p, #course .education-icon i {
@@ -389,9 +394,9 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 
 #course-card-container {
     text-align: left;
-    margin: 2.7vh 0vw 2vh -8vw;
+    margin: 2.7vh 0vw 2vh -5vw;
     float: left;
-    width: 56vw;
+    width: 54vw;
 }
 
 #course-card-container span{
@@ -447,9 +452,8 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 #course-color-scheme-container span {
     color: #11365C;
     font-family: 'Mukta Vaani', sans-serif;
-    font-size:1.15rem;
+    font-size:1.1rem;
     font-weight:300;
-
 }
 
 #course-color-scheme-container .course-color-block {
