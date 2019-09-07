@@ -77,42 +77,72 @@ const personalData =
         {
             "title": "Web Development",
             "iconLink": "icon-browser",
-            "skills": ["HTML5","CSS3", "Javascript", "React", "React Native", "jQuery", "ES7", "Node.js", "Bootstrap"]
+            "skills": ["HTML5","CSS3", "Javascript", "React", "React Native", "jQuery", "ES7", "Node.js", "Bootstrap", "Adobe XD", "Adobe Illustrator", "Adobe Photoshop", "Adobe InDesign"]
         },
         {
             "title": "Data Science",
             "iconLink": "icon-bargraph",
-            "skills": ["SQL", "R", "Python", "Data Visualization", "Critical Thinking", "Presentation", "SASS"]
+            "skills": ["SQL", "R", "Python", "Data Visualization", "Critical Thinking", "Presentation", "SASS", "Tableau"]
         },
         {
             "title": "Psychology",
             "iconLink": "icon-heart",
-            "skills": ["Developmental P.", "Cognitive P.", "Stress & Coping", "Research Statistics", "Learning and Memory", "UnderGrad. Teaching", "Psychobiology of Women"]
+            "skills": ["Research Statistics", "UnderGrad. Teaching"]
         },
         {
             "title": "Others",
             "iconLink": "icon-lightbulb",
-            "skills":["Adobe XD", "Adobe Illustrator", "Adobe Photoshop", "Adobe InDesign", "Git", "PHP", "Firsbase Database", "Wordpress"]
+            "skills":["Adobe Premiere Pro", "Adobe After Effect", "Git", "PHP", "Firsbase Database", "Wordpress"]
         }
     ], 
-    "Education": {
-        "BNDS": {
+    "Education": [
+        {
             "name": "Beijing National Day School",
-            "year": "2011 - 2013"
+            "year": "2011 - 2013",
+            "facts":["Teacher's Aide", "Qinglong Lake Park Volunteer Coordinator"],
+            "graduated": "yes"
         },
-        "SHS": {
+        {
             "name": "Saratoga High School",
-            "year": "2013 - 2016"
+            "year": "2013 - 2016",
+            "facts":["GPA: 3.74/4.0", "Multicultural Club - Activities Coordinator"],
+            "graduated": "yes"
         },
-        "UW": {
+        {
             "name": "University of Washington",
-            "year": "2016 - 2020",
-            "major": ["Psychology, BS", "Computer and Information Science, BS"]
+            "year": "2016 - 2021",
+            "majors": ["Psychology, BS", "Informatics - Human Computer Interaction & Data Science Concentration, BS"],
+            "facts": ["GPA: 3.78/4.0", "Annal Deans List 2016-2019"],
+            "graduated": "no"
         }
-    }
+    ],
+    "Courses": [
+        {
+            "type":"Technical",
+            "class":"technical",
+            "color":"#748392",
+            "classes":["Computer Programming I & II", "Web Programming", "Client-side Programming","Databases and Data Modeling","Data Structures and Algorithm", "Research Methods", "Project Management", "Infomation System Analysis & Design", "Population Health Informatics"]
+        }, 
+        {
+            "type":"Design",
+            "class":"design",
+            "color":"#6895B3",
+            "classes":["Mobile Application Design", "Visual Design", "Design Methods", "Thinking Time Design"]
+        },
+        {
+            "type":"Psychology",
+            "class":"psych",
+            "color":"#6D9599",
+            "classes":["BioPsychology", "Developmental Psychology", "Cognitive Psychology", "Stress & Coping", "Learning and Memory", "Psychobiology of Women", "Psychological Research", "Statistics in Psychology"]
+        },
+        {
+            "type":"Other",
+            "class":"",
+            "color":"#11365C",
+            "classes":["Social Problem", "Professional Writing", "Sculpture", "Ceramic", "Identity Development in Classroom", "Asian American History"]
+        } 
+    ]
 }
-
-
 
 // render navigation bar item
 
@@ -137,6 +167,8 @@ $(window).scroll(function() {
 console.log(personalData["SkillSet"]);
 
 renderSkillSet();
+renderEducationHistory();
+renderCourse();
 
 function renderSkillSet() {
     let skillCardContainer = $('#skill-card-container');
@@ -155,13 +187,60 @@ function renderSkillSet() {
         $(container).append(`<div class="icon-container"><span class="` + skillCard.iconLink + `"></span></div>`);
         $(container).append(subContainer);
         $(skillCardContainer).append(container);
-    })
+    });
 }
 
 function renderEducationHistory() {
-
+    let educationCardContainer = $('#education-card-container');
+    const educationHistory = personalData["Education"];
+    educationHistory.forEach((education) => {
+        let container = $('<div class="education-card">');
+        // choose icon based on graduate status
+        if(education["graduated"] === "yes") {
+            $(container).append('<div class="education-icon"><i class="fas fa-graduation-cap"></i></div>');
+        } else {
+            $(container).append('<div class="education-icon"><i class="fas fa-university"></i></div>');
+        }
+        let subContainer = $('<div></div>');
+        let name = $('<h3>' + education.name + '</h3>' + '<p class="education-year">' + education.year + '</p>');
+        // render major content
+        let majorContainer = $('<div class="major-container"></div>');
+        if(education["majors"] !== undefined) {
+            education["majors"].forEach((major) => {
+                $(majorContainer).append('<p>' + major + '</p>');
+            })
+        } 
+        // render fact content
+        let factContainer = $('<div class="fact-container"></div>');
+        let facts = ""
+        education["facts"].forEach((fact) => {
+            if (facts === "") {
+                facts += fact
+            } else {
+                facts = facts +  ", " + fact;
+            }
+        });
+        $(factContainer).append('<p>' + facts + '</p>');
+        $(subContainer).append(name);
+        $(subContainer).append(majorContainer);
+        $(subContainer).append(factContainer);
+        $(container).append(subContainer);
+        $(educationCardContainer).prepend(container);
+    });
 }
-  
+ 
+function renderCourse() {
+    let courseCardContainer = $('#course-card-container');
+    const courseHistory = personalData["Courses"];
+    courseHistory.forEach((course) => {
+        course["classes"].forEach((classes) => {
+            $(courseCardContainer).append('<span class="' + course.class + '">' + classes + '</span>');
+        });
+        let courseColorScheme = $('#course-color-scheme-container');
+        let scheme = $('<div><div class="course-color-block" style="background-color:'+ course.color + ';"></div><span>' + course.type + '</span></div>');
+        $(courseColorScheme).append(scheme);
+    })
+}
 
 
   

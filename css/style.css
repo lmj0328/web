@@ -68,13 +68,39 @@ a, p, span {
 }
 
 #navigation-bar .navbar-nav li a:hover {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #F7F5F5!important;
     padding-bottom:1vh;
 }
 
 #navigation-bar .navbar-nav i {
     color: #F7F5F5!important;
+}
+
+/* Navigation Bar -- scrolled */
+#navigation-bar nav.scrolled {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0.2px 0.2px 0.2px 0.2px lightgrey;
+}
+
+#navigation-bar .navbar-brand span.scrolled {
+    color: #11365C;
+    text-shadow: 0.5px 0.5px #F7F5F5;
+}
+
+#navigation-bar .navbar-nav li a.scrolled {
+    color: #11365C;
+    text-shadow: 0.5px 0.5px #F7F5F5;
+}
+
+#navigation-bar .navbar-nav li a.scrolled:hover {
+    font-size: 1.2rem;
+    color: #11365C!important;
+    padding-bottom:1vh;
+}
+
+#navigation-bar .navbar-nav i.scrolled {
+    color: #11365C!important;
 }
 
 /* Nav Link Animation*/
@@ -113,32 +139,7 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
     background: #11365C;
 }
 
-/* Navigation Bar -- scrolled */
-#navigation-bar nav.scrolled {
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0.2px 0.2px 0.2px 0.2px lightgrey;
-}
 
-#navigation-bar .navbar-brand span.scrolled {
-    color: #11365C;
-    text-shadow: 0.5px 0.5px #F7F5F5;
-}
-
-#navigation-bar .navbar-nav li a.scrolled {
-    color: #11365C;
-    text-shadow: 0.5px 0.5px #F7F5F5;
-}
-
-#navigation-bar .navbar-nav li a.scrolled:hover {
-    font-size: 1.1rem;
-    color: #11365C!important;
-    padding-bottom:1vh;
-}
-
-
-#navigation-bar .navbar-nav i.scrolled {
-    color: #11365C!important;
-}
 
 
 
@@ -154,7 +155,7 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
     width: 100vw;
     z-index: 0;
     background-size: cover;
-    height: 90vh; 
+    height: 93vh; 
 }
 
 .title-size-1 {
@@ -196,7 +197,7 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 
 /* about-me, why-informatics, why-psychology */
 #about-me {
-    padding: 10vh 15vw 16vh 15vw;
+    padding: 10vh 35vw 16vh 15vw;
 }
 
 #about-me p, #why-informatics p, #why-psychology p {
@@ -212,7 +213,7 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
     font-family: 'Nunito', sans-serif;
     font-weight: 500; 
     margin: 2vh 0vw 4vh 0vw;
-    text-align: center;
+    text-align: left;
 }
 
 #why-informatics, #why-psychology {
@@ -231,8 +232,8 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
    SKILL SET
 --------------------------------------------------------------*/
 
-#skill-set, #education {
-    padding: 12vh 5vw 16vh 8vw;
+#skill-set {
+    padding: 12vh 6vw 16vh 6vw;
     background-color: #F6F4F1;
 }
 
@@ -249,7 +250,7 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 }
 
 #skill-set hr, #education hr {
-    border-top: 1px solid #11365C;
+    border-top: 1px solid #748392;
     margin: 2vh 1vw 4vh 1vw;
 }
 
@@ -259,15 +260,15 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 }
 
 #skill-card-container  div.skill-card {
-    border: 1px dotted #11365C;
+    border: 1px dotted #748392;
     padding: 4vh 2vw 5vh 2vw;
     margin: 1vh .5vw;
     border-radius: 5px;
-    width: 20.5vw;
+    width: 21vw;
 }
 
 #skill-card-container  div.skill-card:hover {
-    border: 1px solid #11365C;
+    border: 1px solid #748392;
 }
 
 
@@ -288,6 +289,7 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 
 #skill-card-container div.skill-container{
     padding: 1vh 0vw 1vh 0vw;
+    text-align: center;
 }
 
 #skill-card-container div.skill-container span {
@@ -313,6 +315,7 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 
 #education {
     background-color: #11365C;
+    padding: 12vh 22vw 16vh 22vw
 }
 
 #education h2, #education h3, #education p, #education-card-container .education-icon i {
@@ -320,11 +323,19 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 }
 
 #education hr {
-    border-top: 1px solid #F6F4F6;
+    border-top: 1px solid #748392;
 }
 
 #education-card-container {
     margin: 1vh 2vw;
+}
+
+#education-card-container .education-card {
+    margin: 6vh 0vw;
+}
+
+#education-card-container .education-card:last-of-type {
+    margin: 6vh 0vw 0vh 0vw;
 }
 
 #education-card-container .education-icon {
@@ -332,20 +343,121 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
     margin: 2vh 2vw;
 }
 
-
 #education-card-container .education-icon i {
     font-size: 2.3rem;
 }
 
-
 #education-card-container h3, #education-card-container p {
     text-align: left;
-    margin: 1vh 0vw 1vh 8vw; 
+    margin: 0.7vh 0vw 0.7vh 8vw; 
+} 
+
+#education-card-container h3 {
+    font-size:1.3rem;
+} 
+
+#education-card-container p {
+    font-size: 1.1rem;
+    font-family: 'Mukta Vaani', sans-serif;
+    color: #748392;
+    font-weight: 300;
+} 
+
+#education-card-container p.education-year {
+    font-size: 1.15rem;
 } 
 
 
+/*--------------------------------------------------------------
+   COURSE-WORK
+--------------------------------------------------------------*/
 
+#course {
+    background-color: #F6F4F6;
+    padding: 12vh 22vw 16vh 22vw;
+    height: 74vh;
+}
 
+#course h2, #course h3, #course p, #course .education-icon i {
+    color: #11365C;
+}
+
+#course h2 {
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+#course-card-container {
+    text-align: left;
+    margin: 2.7vh 0vw 2vh -8vw;
+    float: left;
+    width: 56vw;
+}
+
+#course-card-container span{
+    border-radius: 20px;
+    padding: 4px 15px;
+    display: inline-block;
+    margin: 0vh .5vw 1vh 0vw;
+    text-align: center;
+    border: 1px solid #11365C;
+    color: #11365C;
+}
+
+#course-card-container span:hover{
+    background-color: #11365C;
+    color: #11365C;
+}
+
+#course-card-container span.technical{
+    border: 1px solid #748392;
+    color: #748392;
+}
+
+#course-card-container span.technical:hover{
+    background-color: #748392;
+    color: #F6F4F1;
+}
+
+#course-card-container span.design{
+    border: 1px solid #6895B3;
+    color: #6895B3;
+}
+
+#course-card-container span.design:hover{
+    background-color: #6895B3;
+    color: #F6F4F1;
+}
+
+#course-card-container span.psych{
+    border: 1px solid #6D9599;
+    color: #6D9599;
+}
+
+#course-card-container span.psych:hover{
+    background-color: #6D9599;
+    color: #F6F4F1;
+}
+
+#course-color-scheme-container {
+    float: right;
+    margin: 3vh -4vw 0vh 0vw;
+}
+
+#course-color-scheme-container span {
+    color: #11365C;
+    font-family: 'Mukta Vaani', sans-serif;
+    font-size:1.15rem;
+    font-weight:300;
+
+}
+
+#course-color-scheme-container .course-color-block {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    margin: 11px .5vw 0px 0vw;
+}
 
 
 /*--------------------------------------------------------------
@@ -387,7 +499,7 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 }
 
 .filter > li > a{
-    font-family: 'Athiti', sans-serif;
+    font-family: 'Mukta Vaani', sans-serif;
 }
 
 
