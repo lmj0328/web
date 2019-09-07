@@ -18,7 +18,12 @@
 a, p, span {
     color: #F6F4F1;
     font-size: 1rem;
-    font-family: 'EB Garamond', serif;
+    font-family: 'Mukta Vaani', sans-serif;
+}
+
+h2 {    
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
 }
 
 /*--------------------------------------------------------------
@@ -173,9 +178,6 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
     text-shadow: 0.5px 1px #647B5E;
 }
 
-.title-size-3 {
-    font-family: 'EB Garamond', serif;
-}
 
 .title-caption {
     position: relative;
@@ -237,13 +239,14 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
     background-color: #F6F4F1;
 }
 
-#skill-set h2, #skill-set div.icon-container, #skill-set h3, #education h2 {
+#skill-set h2, #skill-set div.icon-container, #skill-set h3{
     color: #11365C;
     font-family: 'Nunito', sans-serif;
     text-align: center;
+
 }
 
-#skill-set h2, #education h2 {
+#skill-set h2 {
     font-size: 2rem;
     font-weight: 500; 
     margin: 2vh 0vw;
@@ -294,13 +297,14 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 
 #skill-card-container div.skill-container span {
     margin: 4px 4px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     border: 1px solid #6D9599;
     border-radius: 15px;
     padding: 3px 10px;
     display: inline-block;
     background-color: #F6F4F6;
     color: #6D9599;
+    font-weight: 300;
 }
 
 #skill-card-container div.skill-container span:hover {
@@ -320,6 +324,10 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 
 #education h2, #education h3, #education p, #education-card-container .education-icon i {
     color: #F6F4F6;
+}
+
+#education h2 {
+    text-align: center;
 }
 
 #education hr {
@@ -348,6 +356,7 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 }
 
 #education-card-container h3, #education-card-container p {
+    font-family: 'Mukta Vaani', sans-serif;
     text-align: left;
     margin: 0.7vh 0vw 0.7vh 8vw; 
 } 
@@ -358,7 +367,6 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 
 #education-card-container p {
     font-size: 1.1rem;
-    font-family: 'Mukta Vaani', sans-serif;
     color: #748392;
     font-weight: 300;
 } 
@@ -407,6 +415,7 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
     text-align: center;
     border: 1px solid #11365C;
     color: #11365C;
+    font-weight: 300;
 }
 
 #course-card-container span:hover{
