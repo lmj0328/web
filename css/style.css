@@ -68,7 +68,7 @@ a, p, span {
 }
 
 #navigation-bar .navbar-nav li a:hover {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     color: #F7F5F5!important;
     padding-bottom:1vh;
 }
@@ -94,7 +94,7 @@ a, p, span {
 }
 
 #navigation-bar .navbar-nav li a.scrolled:hover {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     color: #11365C!important;
     padding-bottom:1vh;
 }
@@ -463,8 +463,24 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
     margin: 11px .5vw 0px 0vw;
 }
 
+/*--------------------------------------------------------------
+   VOLUNTEER-EXPERIENCE
+--------------------------------------------------------------*/
 
+#volunteer-experience {
+    background-color: #11365C;
+    padding: 12vh 20vw 16vh 20vw;
+    text-align: center;
+}
 
+#volunteer-experience hr {
+    border-top: 1px solid #748392;
+    margin: 2vh 1vw 2.8vh 1vw;
+}
+
+#volunteer-experience h2 {
+    color: #F6F4F1;
+}
 
 
 
