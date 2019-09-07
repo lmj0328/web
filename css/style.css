@@ -394,7 +394,7 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 
 #course-card-container {
     text-align: left;
-    margin: 2.7vh 0vw 2vh -5vw;
+    margin: 2vh 0vw 2vh -5vw;
     float: left;
     width: 54vw;
 }
@@ -403,7 +403,7 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
     border-radius: 20px;
     padding: 4px 15px;
     display: inline-block;
-    margin: 0vh .5vw 1vh 0vw;
+    margin: 0vh .5vw 1.25vh 0vw;
     text-align: center;
     border: 1px solid #11365C;
     color: #11365C;
@@ -446,7 +446,7 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 
 #course-color-scheme-container {
     float: right;
-    margin: 3vh -4vw 0vh 0vw;
+    margin: 3vh -3.5vw 0vh 0vw;
 }
 
 #course-color-scheme-container span {
@@ -462,6 +462,22 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
     display: inline-block;
     margin: 11px .5vw 0px 0vw;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*--------------------------------------------------------------
