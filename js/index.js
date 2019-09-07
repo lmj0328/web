@@ -77,7 +77,7 @@ const personalData =
         {
             "title": "Web Development",
             "iconLink": "icon-browser",
-            "skills": ["HTML5","CSS3", "Javascript", "React", "React Native", "jQuery", "ES7", "Node.js", "Bootstrap", "Adobe XD", "Adobe Illustrator", "Adobe Photoshop", "Adobe InDesign"]
+            "skills": ["HTML5","CSS3", "Javascript", "React", "React Native", "jQuery", "ES7", "Node.js", "Bootstrap", "Adobe XD", "Adobe Illustrator", "Adobe Photoshop"]
         },
         {
             "title": "Data Science",
@@ -87,7 +87,7 @@ const personalData =
         {
             "title": "Psychology",
             "iconLink": "icon-heart",
-            "skills": ["Research Statistics", "UnderGrad. Teaching"]
+            "skills": ["Interpersonal Communication", "Research", "Statistics", "UnderGrad. Teaching", "Special Needs Children", "Patience", "Problem-Solving"]
         },
         {
             "title": "Others",
@@ -127,7 +127,7 @@ const personalData =
             "type":"Design",
             "class":"design",
             "color":"#6895B3",
-            "classes":["Mobile Application Design", "Visual Design", "Design Methods", "Thinking Time Design"]
+            "classes":["Mobile Application Design", "Visual Design", "Design Methods", "Design Thinking", "Time Design"]
         },
         {
             "type":"Psychology",
@@ -143,7 +143,6 @@ const personalData =
         } 
     ]
 }
-
 // render navigation bar item
 
 
