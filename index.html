@@ -37,13 +37,13 @@
                     <div class="collapse navbar-collapse borderXwidth" id="navbarNav">
                         <ul class="navbar-nav ">
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="https://www.mengjiao.dev">Home <span class="sr-only">(current)</span></a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about-me">About Me</a>
+                            <li class="nav-item" id="about-me-button">
+                                <a class="nav-link" href="#">About Me</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="portfolio">Portfolio</a>
+                            <li class="nav-item" id="portfolio-button">
+                                <a class="nav-link" href="#">Portfolio</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Resume</a>
@@ -68,7 +68,7 @@
             </section>
 
             <!--Home-->
-            <div>
+            <div id="home-page">
                 <section class="home-section home-full-height bg-dark bg-gradient" id="home-screen" 
                          style="background-image: linear-gradient(rgba(219, 183, 198, 0.116), rgba(100, 123, 94, 0.329)), url('img/bg-main.jpg')">
                     <div class="title-caption">
@@ -89,32 +89,13 @@
                         <p>Thank you so much for taking the time to explore my journey, and sincerely hope to get to know you soon :D</p>
 
                     </div>
-                </section> 
-                <section id="why-informatics" class="background-light">
-                    <h2>Why Informatics?</h1>
-                    <div>
-                        <p>Shanel</p>
-                        <p>how accessibility enhance helping other people</p>
-                    </div>
-                </section>
-                <section id="why-psychology" class="background-dark">
-                    <h2>Why Psychology?</h1>
-                    <div>
-                        <p>brotherhoood</p>
-                        <p>Human Brain</p>
-                        <p>Cognitive Psychology</p>
-                    </div>
-                </section>
-            </div>
-
-            <!--About Me-->
-            <div>
+                </section>                
                 <section id="skill-set">
-                    <div>
-                        <h2>Skill Set</h2>
-                        <hr>
-                        <div id="skill-card-container"></div>
-                    </div>
+                        <div>
+                            <h2>Skill Set</h2>
+                            <hr>
+                            <div id="skill-card-container"></div>
+                        </div>
                 </section>
                 <section id="education">
                     <div>
@@ -131,22 +112,53 @@
                         <div id="course-color-scheme-container"></div>
                     </div>
                 </section>
+                <section id="professional-experience">
+                    <div>
+                        <h2>Experience</h2>
+                        <hr>
+                        <div id="pro-color-scheme-container">
+                            <div class="pro-color-block-card"><div class="pro-color-block" style="background-color:#748392;"></div><span>Internship</span></div>
+                            <div class="pro-color-block-card"><div class="pro-color-block" style="background-color:#6D9599;"></div><span>Volunteer</span></div>
+                            <div class="pro-color-block-card"><div class="pro-color-block" style="background-color:#6895B3;"></div><span>School Activity</span></div>
+    
+                        </div>
+                        <div id="pro-card-container"></div>
+                    </div>
+                </section>
+            </div>
+
+            <!--About Me-->
+            <div id="about-me-page">
+                <section id="why-informatics" class="background-light">
+                        <h2>Why Informatics?</h2>
+                        <div>
+                            <p>Shanel</p>
+                            <p>how accessibility enhance helping other people</p>
+                        </div>
+                </section>
+                <section id="why-psychology" class="background-dark">
+                    <h2>Why Psychology?</h2>
+                    <div>
+                        <p>brotherhoood</p>
+                        <p>Human Brain</p>
+                        <p>Cognitive Psychology</p>
+                    </div>
+                </section>
+                <section id="hobbies-and-interest">
+                    <h2>Hobbies & Interests</h1>
+                        <div></div>
+                </section>
                 <section id="volunteer-experience">
                     <div>
                         <h2>Volunteer Experience</h2>
                         <hr>
-                        <div id="v-experience-container">
-
-                        </div>
+                        <div id="v-experience-container"></div>
                     </div>
-                </section>
-                <section id="hobbies-and-interest">
-
                 </section>
             </div>
 
             <!--Projects-->
-            <section class="portfolio pb-0" id="past-works">
+            <section class="portfolio pb-0" id="portfolio-page">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-6 col-sm-offset-3">

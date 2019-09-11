@@ -15,7 +15,7 @@
 
 
 /* General */
-a, p, span {
+a, p, span, li {
     color: #F6F4F1;
     font-size: 1rem;
     font-family: 'Mukta Vaani', sans-serif;
@@ -23,6 +23,11 @@ a, p, span {
 
 h2 {    
     font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+}
+
+h3 {    
+    font-family: 'Mukta Vaani', sans-serif;
     font-weight: 500;
 }
 
@@ -145,9 +150,6 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 }
 
 
-
-
-
 /*--------------------------------------------------------------
 	HOME
 --------------------------------------------------------------*/
@@ -202,14 +204,14 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
     padding: 10vh 35vw 16vh 15vw;
 }
 
-#about-me p, #why-informatics p, #why-psychology p {
+#about-me p {
     font-size: 1.3rem;
     color: #F6F4F1;
     font-family: 'Mukta Vaani', sans-serif;
     font-weight:300;
 }
 
-#about-me h2, #why-informatics h2, #why-psychology h2 {
+#about-me h2 {
     font-size: 2rem;
     color: #F6F4F1;
     font-family: 'Nunito', sans-serif;
@@ -218,17 +220,6 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
     text-align: left;
 }
 
-#why-informatics, #why-psychology {
-    padding: 12vh 15vw 16vh 15vw;
-}
-
-#why-informatics p {
-    color: #11365C;
-}
-
-#why-informatics h2 {
-    color: #11365C;
-}
 
 /*--------------------------------------------------------------
    SKILL SET
@@ -382,8 +373,8 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 
 #course {
     background-color: #F6F4F6;
-    padding: 12vh 22vw 16vh 22vw;
-    height: 84vh;
+    padding: 13vh 22vw 16vh 22vw;
+    height: 88vh;
 }
 
 #course hr {
@@ -420,7 +411,7 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 
 #course-card-container span:hover{
     background-color: #11365C;
-    color: #11365C;
+    color: #F6F4F1;
 }
 
 #course-card-container span.technical{
@@ -472,14 +463,164 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
     margin: 11px .5vw 0px 0vw;
 }
 
+
+/*--------------------------------------------------------------
+    PROFESSIONAL EXPERIENCE
+--------------------------------------------------------------*/
+
+#professional-experience {
+    background-color: #11365C;
+    padding: 12vh 18vw 18vh 18vw;
+}
+
+#professional-experience hr {
+    border-top: 1px solid #748392;
+    margin: 2vh 1vw 2.8vh 1vw;
+}
+
+#professional-experience h2, #pro-card-container h3, #pro-card-container h4, #professional-experience p {
+    color: #F6F4F6;
+}
+
+#professional-experience h2 {
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+#pro-card-container {
+    margin-left: 8vw;
+    margin-right: -4vw;
+}
+
+#pro-card-container .pro-card {
+    margin: 2vh 1vw 2vh 0.5vw;
+    padding: 2.5vh 1vw 2.5vh 3vw;
+}
+
+#pro-card-container h3 {
+    font-size: 1.3rem;
+    display: inline-block;
+}
+
+#pro-card-container h4 {
+    margin: -4vh 0vw 0.5vh -13.75vw;
+    font-size: 0.9rem;
+    font-family: 'Mukta Vaani', sans-serif;
+    color: #748392;
+    position: absolute;
+    width: 9vw;
+    text-align: right;
+    line-height: 3vh;
+}
+
+#pro-card-container div.pro-external-icon {
+    display: inline-block;
+}
+
+
+#pro-card-container span {
+    margin-left: -1.75vw;
+}
+
+#pro-card-container li {
+    padding: 0.25vh;
+}
+
+#pro-color-scheme-container {
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    width: 64vw;
+    margin-right:-2vw;
+}
+
+#pro-color-scheme-container .pro-color-block-card {
+    margin-left: 40px;
+}
+
+#pro-color-scheme-container span {
+    color: #F6F4F6;
+    font-family: 'Mukta Vaani', sans-serif;
+    font-size:1.1rem;
+    font-weight:300;
+}
+
+#pro-color-scheme-container .pro-color-block {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+/*--------------------------------------------------------------
+    WHY INFORMATICS??  WHY PSYCHOLOGY??
+--------------------------------------------------------------*/
+
+/* why-informatics, why-psychology */
+#why-informatics, #why-psychology {
+    padding: 12vh 15vw 16vh 15vw;
+}
+
+#why-informatics p, #why-psychology p {
+    font-size: 1.3rem;
+    color: #F6F4F1;
+    font-family: 'Mukta Vaani', sans-serif;
+    font-weight:300;
+}
+
+#why-informatics h2, #why-psychology h2 {
+    font-size: 2rem;
+    color: #F6F4F1;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500; 
+    margin: 2vh 0vw 4vh 0vw;
+    text-align: left;
+}
+
+#why-informatics p {
+    color: #11365C;
+}
+
+#why-informatics h2 {
+    color: #11365C;
+}
+
+
+/*----------------------------------------------------------------
+    HOBBIES-AND-INTEREST
+----------------------------------------------------------------*/
+#hobbies-and-interest {
+    background-color: #F6F4F1;
+    padding: 12vh 15vw 16vh 15vw;
+}
+
+
+#hobbies-and-interest p {
+    font-size: 1.3rem;
+    color: #11365C;
+    font-family: 'Mukta Vaani', sans-serif;
+    font-weight:300;
+}
+
+#hobbies-and-interest h2 {
+    font-size: 2rem;
+    color: #11365C;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500; 
+    margin: 2vh 0vw 4vh 0vw;
+    text-align: left;
+}
+
+
 /*--------------------------------------------------------------
    VOLUNTEER-EXPERIENCE
 --------------------------------------------------------------*/
 
 #volunteer-experience {
     background-color: #11365C;
-    padding: 12vh 20vw 16vh 20vw;
-    text-align: center;
+    padding: 12vh 15vw 16vh 15vw;
 }
 
 #volunteer-experience hr {
@@ -487,9 +628,116 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
     margin: 2vh 1vw 2.8vh 1vw;
 }
 
-#volunteer-experience h2 {
+#volunteer-experience h2 { 
     color: #F6F4F1;
 }
+
+#volunteer-experience h3 {
+    margin: 0.25vh 0vw 0.2vh 0vw;
+    font-size: 1.3rem;
+}
+
+#v-experience-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    overflow-y: auto;
+}
+
+#v-experience-container span, #v-experience-container li {
+    color: #11365C;
+}
+
+#v-experience-container ul {
+    margin-bottom: 0vh;
+}
+
+#v-experience-container li {
+    margin: 0.3vh 0vw;
+}
+
+#v-experience-container .v-card {
+    background-color: #F6F4F1;
+    color: #11365C;
+    width: 15vw;
+    height: 30vh;
+    border-radius: 15px;
+    text-align: left;
+    margin: 2vh 1.25vw 7vh 1.25vw;
+    flex-shrink: 0;
+}
+
+#v-experience-container .v-card:hover {
+    width: 45vw;
+}
+
+#v-experience-container .v-card:nth-of-type(1) {
+    margin-left: 1vw;
+
+}
+
+#v-experience-container span.v-organizer {
+    color: #6895B3;
+}
+
+#v-experience-container div.v-imgholder {
+    border-radius: 15px;
+    float: left;
+    width: 15vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#v-experience-container .v-card:hover div.v-imgholder {
+    border-radius: 15px 0px 0px 15px;
+}
+
+#v-experience-container div.v-imgholder img {
+    height: 30vh;
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#v-experience-container .v-card div.v-content-holder {
+    display:none;
+    background-color: #F6F4F1;
+    padding: 2.5vh 2.5vw;
+    border-radius: 0px 15px 15px 0px;
+    width: 29vw;
+    height: 30vh;
+    float: left;
+}
+
+#v-experience-container .v-card:hover div.v-content-holder {
+    display: block;
+}
+
+#v-experience-container div.v-content-holder div {
+    text-align: right;
+}
+
+#v-experience-container .v-external-link-icon {    
+    margin: 0vh 0 0 0vw;
+    color: #748392;
+    font-size: 1.3rem;
+    text-align: left;
+    display: inline-block;
+}
+
+#v-experience-container .v-card:hover div.v-content-holder a {
+    color: #748392;
+    text-decoration: underline;
+    font-size: 0.9rem;
+}
+
+
+
 
 
 
