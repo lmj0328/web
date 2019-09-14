@@ -357,10 +357,14 @@ function renderHomePage() {
     $('#about-me-page').hide();
     $('#portfolio-page').hide();
     $('#about-me-button').click(() => {
+        $(".nav-item").removeClass("active");
+        $('#about-me-button').addClass('active');
         renderAboutMePage();
     })
 
     $('#portfolio-button').click(() => {
+        $(".nav-item").removeClass("active");
+        $('#portfolio-button').addClass('active');
         renderPortfolioPage();
     })
 }

@@ -71,7 +71,7 @@ h3 {
 }
 
 #navigation-bar .navbar-nav li.active {
-    border-bottom: 1px solid #F7F5F5 ;
+    font-weight:800;
 }
 
 
