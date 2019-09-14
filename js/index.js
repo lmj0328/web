@@ -32,7 +32,7 @@ const personalData = {
             "date": "Jan 2018 - Jun 2018",
             "location": "Seattle, WA",
             "description": ["Organize, prepare, and serve food for homeless people around U District twice a week."],
-            "link": "http://www.rootsinfo.org/",
+            "link": "",
             "category":"volunteer",
             "categoryC":"#6D9599"
         },
@@ -43,7 +43,7 @@ const personalData = {
             "location": "Seattle, WA",
             "description":[
                 "Leadership Development: Leadership program targets on leadership skills and different leadership styles. Learn different aspects of leadership includes intentionality, mentorship, empathy, personal growth, etc"],
-            "link":"http://uwleaders.asuw.org/",
+            "link":"",
             "category":"school",
             "categoryC":"#6895B3"
         },
@@ -53,7 +53,7 @@ const personalData = {
             "date": "Jan 2018 - Jan 2018",
             "location": "Bellevue, WA",
             "description": ["Provide necessary technology support", "Guide and communicate with guests", "Host section"],
-            "link": "http://aisea18.xnextcon.com/",
+            "link": "",
             "category":"volunteer",
             "categoryC":"#6D9599"
         },
@@ -315,7 +315,6 @@ const personalData = {
         } 
     ]
 }
-
 
 
 // render navigation bar item
