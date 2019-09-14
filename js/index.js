@@ -68,7 +68,7 @@ const personalData = {
             "categoryC":"#6D9599"
         },
         {
-            "companyN":"ShuXunDa Information Communication Technology Company",
+            "companyN":"ShuXunDa Information Technology Company",
             "role": "Social Media Marketing Intern",
             "date": "Jun 2016 - Sep 2016",
             "location": "Beijing, China",
@@ -104,56 +104,150 @@ const personalData = {
     ],
     "PastProjects": [
         {
-            "client": "Restmesh Inc.",
-            "link": "https://demosto.restmesh.com/restaurants/demo2019/tabletorder?secm=3",
+            "name":"TabletOrder",
+            "client": "Intern Project @Restmesh Inc.",
+            "role":"UX Designer, Full-stack Developer",
+            "link": "https://demosto.restmesh.com/restaurants/demo2019/tabletorder",
             "duration": "1 Month",
-            "date":"July 2019 - Aug 2019",
-            "myrole":[["Design", "icon-tools"], ["Development", "icon-tools-2"]],
+            "date":"July 2019 - August 2019",
+            "skills":[["Design", "icon-tools", "40%"], ["Development", "icon-tools-2", "60%"]],
             "location": "Redmond, WA",
-            "description": "Wed, Feb 14, 2019 11:00am"
+            "sDescription": "Online self-order POS transaction system",
+            "lDescription": "",
+            "tools":["Adobe AI", "Adobe XD", "HTML5", "CSS3", "Javascript", "Jquery"],
+            "img":"img/project/tabletorder.png",
+            "categories":["front-end", "design"]
+        },
+        {
+            "name":"Baron’s Electronic Menu",
+            "client": "Intern Project @Restmesh Inc.",
+            "role":"UX Designer, Full-stack Developer",
+            "link": "https://github.com/unicough/barons-menu-react",
+            "duration": "2 Week",
+            "date":"July 2019 - July 2019",
+            "location": "Redmond, WA",
+            "sDescription": "Electronic menu designed for high-end restaurant",
+            "lDescription": "",
+            "tools":["Adobe XD", "React"],
+            "img":"img/project/baronMenu.png",
+            "categories":["front-end", "design"]
+        },
+        {
+            "name":"Suicide Prevention Guide",
+            "client": "Population Health Informatics @UW",
+            "role":"Data Analysts",
+            "link": "https://github.com/helenlaire/HealthReport-TeamBug",
+            "duration": "10 weeks",
+            "date":"Apr 2019 - Jun 2019",
+            "location": "Seattle, WA",
+            "sDescription": "Data Analysis of suicidal rate and related risk and protective factors",
+            "lDescription": "",
+            "tools":["R", "ShinyApp"],
+            "img":"img/project/suicide.png",
+            "categories":["data-av"]
+        },
+        {
+            "name":"SpeNeeds",
+            "client": "Front-End Development @UW",
+            "role":"UI Designer, UX Designer, Full-stack Developer",
+            "link": "https://info340-speneeds.firebaseapp.com/",
+            "duration": "10 weeks",
+            "date":"Jan 2019 - Mar 2019",
+            "location": "Seattle, WA",
+            "sDescription": "Event Browser designed specifically for communities around children with special needs",
+            "lDescription": "",
+            "tools":["HTML5", "CSS3", "Javascript", "Jquery", "React"],
+            "img":"img/project/speneeds.png",
+            "categories":["front-end", "design"]
+        },
+        {
+            "name":"Legistar",
+            "client": "Seattle Hall Council",
+            "role":"System Designer, UI Designer",
+            "link": "https://drive.google.com/file/d/1XZs_VEiBDHfHWTPqzuKEBDlC4YcAAhyk/view?usp=sharing",
+            "duration": "10 weeks",
+            "date":"Jan 2019 - Mar 2019",
+            "location": "Seattle, WA",
+            "sDescription": "Research and develop requirement specifications for Seattle Hall Concil's legislation system",
+            "lDescription": "",
+            "tools":["Adobe Illustrator"],
+            "img":"img/project/legistar.png",
+            "categories":["research"]
+        },
+        {
+            "name":"Perceptions of Waiting Time",
+            "client": "Time Design @UW",
+            "role":"User Researcher",
+            "link": "https://docs.google.com/document/d/1MW2fJrQa0U6Yz8ndTt5QSK1JNOGe0zIoC8R_xkU0epg/edit?usp=sharing",
+            "duration": "10 weeks",
+            "date":"Jan 2019 - Mar 2019",
+            "location": "Seattle, WA",
+            "sDescription": "Research and Literature analysis on how designs impact people’s perceptions of waiting time",
+            "lDescription": "",
+            "tools":["Research"],
+            "img":"img/project/waitingTime.png",
+            "categories":["research"]
+        },
+        {
+            "name":"Washington Guide",
+            "client": "Information Technical Foundation @UW",
+            "role":"Data Analysts",
+            "link": "https://lmj0328.shinyapps.io/FinalProject/",
+            "duration": "10 weeks",
+            "date":"Sep 2018 - Dec 2018",
+            "location": "Seattle, WA",
+            "sDescription": "Data Visualization of Washington housing and income tax examining individual counties' trends over time",
+            "lDescription": "",
+            "tools":["R", "ShinyApp"],
+            "img":"img/project/washingtonGuide.png",
+            "categories":["data-av"]
+        },
+        {
+            "name":"Portion Assisstant",
+            "client": "Design Methods @UW",
+            "role":"UI Designer, UX Designer, User Researcher",
+            "link":"https://drive.google.com/file/d/1ZAa1piN11mKVTp4QQO_Bkl3KJrYLQIZ2/view?usp=sharing",
+            "duration": "9 weeks",
+            "date":"Jun 2018 - Aug 2018",
+            "location": "Seattle, WA",
+            "sDescription": "An add-on function in yelp aim to reduce food waste throught portion indication",
+            "lDescription": "",
+            "tools":["Adobe Illustrator"],
+            "img":"img/project/menuCalculator.png",
+            "categories":["design"]
+        },
+        {
+            "name":"Form & Color Design",
+            "client": "Design @UW",
+            "role":"Interface Design",
+            "link":"https://drive.google.com/file/d/1jTwjnjhjbhMuQBnUv4PvtFDCEdv3lDhv/view?usp=sharing",
+            "duration": "9 weeks",
+            "date":"Jun 2018 - Aug 2018",
+            "location": "Seattle, WA",
+            "sDescription": "Learning and practicing design principles. ",
+            "lDescription": "",
+            "tools":["Adobe Illustrator"],
+            "img":"img/project/design265.png",
+            "categories":["design"]
+        },
+        {
+            "name":"Politify",
+            "client": "Informatics Foundation @UW",
+            "role":"UX Designer",
+            "link": "https://docs.google.com/document/d/1QsySykORPLZVlCd5s8S3Wt_uhbehIp36S9hSfeHdg7A/edit?usp=sharing",
+            "duration": "10 weeks",
+            "date":"Jan 2018 - Mar 2018",
+            "location": "Seattle, WA",
+            "sDescription": "Mobile Application target on young non-voters to raise their political awareness",
+            "lDescription": "",
+            "tools":[""],
+            "img":"img/project/politify.png",
+            "categories":["design"]
         }
     ],
-    "VolunteerExperience": [
-        {
-            "orgName": "ROOTS Young Adult Shelter",
-            "title": ["Dinner Meal Team Member"],
-            "startDate": "2018 Jan",
-            "endDate": "2018 Jun",
-            "link": "http://www.rootsinfo.org/",
-            "img": "data:image/png;base64,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",
-            "details": ["Organize, prepare, and serve food for homeless people around U District twice a week."]
-        },
-        {
-            "orgName": "AI NEXTCon",
-            "title": ["Technology Support", "Front Desk Communicator", "Section Host"],
-            "startDate": "2018 Jan",
-            "endDate": "2018 Jan",
-            "link": "http://aisea18.xnextcon.com/",
-            "img": "http://aisea18.xnextcon.com/img/fallbg.png",
-            "details": ["Provide necessary technology support", "Guide and communicate with guests", "Host section"]
-        },
-        {
-            "orgName": "Rick's Cafe - UW House and Food Services",
-            "title": ["Student Volunteer"],
-            "startDate": "2016 Dec",
-            "endDate": "2017 Jun",
-            "link": "https://rickscafeuw.wordpress.com/",
-            "img": "https://rickscafeuw.files.wordpress.com/2016/11/fullsizeoutput_cf.jpeg?w=900",
-            "details": ["Make and sale ice cream and shakes to students at low price"]
-        },
-        {
-            "orgName": "FCSN Friends of Children with Special Needs",
-            "title": ["Chinese Class - Teacher", "Art Class & Life Skill Class - Assisstant"],
-            "startDate": "2013 Aug",
-            "endDate": "2016 Jun",
-            "link": "https://fcsn1996.org/",
-            "img": "https://media.licdn.com/dms/image/C560BAQE7v-4buGGKfw/company-logo_400_400/0?e=1576108800&v=beta&t=hARTIo5-P3WxWSeQzgJdkitbbJkdeynA5rokeSUmwIY",
-            "details": ["Help special students learn skills in classroom settings.", "Comfort and guide them if needed."]
-        }
-    ], 
     "SkillSet": [
         {
-            "title": "Web Development",
+            "title": "Web Dev. & Design",
             "iconLink": "icon-browser",
             "skills": ["HTML5","CSS3", "Javascript", "React", "React Native", "jQuery", "ES7", "Node.js", "Bootstrap", "Adobe XD", "Adobe Illustrator", "Adobe Photoshop"]
         },
@@ -224,19 +318,16 @@ const personalData = {
 
 
 
-
 // render navigation bar item
-
 
 
 // when window scroll, switch navigation bar stylesheet
 $(window).scroll(function() {
-    if($(document).scrollTop() > 50) {
+    if($(document).scrollTop() > 50 || $('#home-page').css('display') === 'none') {
         $("#navigation-bar nav").addClass("scrolled");
         $("#navigation-bar .navbar-brand span").addClass("scrolled");
         $("#navigation-bar .navbar-nav li a").addClass("scrolled");
         $("#navigation-bar .navbar-nav i").addClass("scrolled");    
-    
     } else {
         $("#navigation-bar nav").removeClass("scrolled");
         $("#navigation-bar .navbar-brand span").removeClass("scrolled");
@@ -245,15 +336,25 @@ $(window).scroll(function() {
     } 
 });
 
-
 renderHomePage();
+
+$('#filters li.filter').click(function() {
+    $(".filter").removeClass("current");
+    $(this).addClass("current");
+    
+    // filterPortfolio
+    var filter = $(this).attr('value');
+    filterPortfolio(filter);
+});
+
+
 
 function renderHomePage() {
     renderSkillSet();
     renderEducationHistory();
     renderCourse();
     renderExperience();
-    renderVolunteerExperience();
+    renderPortfolio();
     $('#about-me-page').hide();
     $('#portfolio-page').hide();
     $('#about-me-button').click(() => {
@@ -275,8 +376,18 @@ function renderPortfolioPage() {
     $('#home-page').hide();
     $('#about-me-page').hide();
     $('#portfolio-page').show();
+
+    if($('#home-page').css('display') === 'none') {
+        $("#navigation-bar nav").addClass("scrolled");
+        $("#navigation-bar .navbar-brand span").addClass("scrolled");
+        $("#navigation-bar .navbar-nav li a").addClass("scrolled");
+        $("#navigation-bar .navbar-nav i").addClass("scrolled");    
+    }
 }
 
+
+
+/* sub function */
 function renderSkillSet() {
     let skillCardContainer = $('#skill-card-container');
     const skillSet = personalData["SkillSet"];
@@ -349,50 +460,16 @@ function renderCourse() {
     })
 }
 
-function renderVolunteerExperience() {
-    let volunteerCardContainer = $('#v-experience-container');
-    const volunteerHistory = personalData["VolunteerExperience"];
-    volunteerHistory.forEach((experience) => {
-        let Card = $('<div class="v-card"></div>');
-        let imgHolder = $('<div class="v-imgholder"><img src="' + experience["img"] + '" /></div>');
-        let contentHolder =$('<div class="v-content-holder"></div>');
-        let org = $('<span class="v-organizer">' + experience["orgName"] + '</span>');
-        let position = "";
-        experience["title"].forEach((title) => {
-            if (position !== "") {
-                position = position + ", " + title;
-            } else {
-                position += title;
-            }
-        })
-        let positionHeader = $('<h3>' + position + '</h3>');
-        let time = $('<span>' + experience["startDate"] + ' - ' + experience["endDate"] + '</span>')
-        let responsibility = $('<ul></ul>');
-        experience["details"].forEach((detail) => {
-            $(responsibility).append('<li>' + detail + '</li>');
-        })
-        let externalLink = $('<div><a href="' + experience["link"] + '"> LEARN MORE </a></div>');
-        
-        $(contentHolder).append(org);
-        $(contentHolder).append(positionHeader);
-        $(contentHolder).append(time);
-        $(contentHolder).append(responsibility);
-        $(contentHolder).append(externalLink);
-        $(Card).append(imgHolder);
-        $(Card).append(contentHolder);
-        $(volunteerCardContainer).append(Card);
-    });
-}
-
 function renderExperience() {
     let proContainer = $('#pro-card-container');
     let experiences = personalData["ProfessionalExperience"];
     let colorContainer = $('#pro-color-scheme-container');
     let colors = [["#748392", "Internship"], ["#6D9599", "Volunteer"], ["#6895B3", "School Activity"]];
-
+    colors.forEach((color) => {
+        colorContainer.append('<div class="pro-color-block-card"><div class="pro-color-block" style="background-color:'+ color[0] + ';"></div><span>' + color[1]+ '</span></div>')
+    })
     experiences.forEach((experience) => {
         let card = $('<div class="pro-card" style="border-left: 1vw solid ' + experience["categoryC"] + ';">')
-        console.log(experience["link"]);
         if(experience["link"] !== "") {
             let extlink = $('<a href="' + experience["link"] + '"><div class="pro-external-icon"><span class="icon-attachment" aria-hidden="true"></span></div></a>');
             $(card).append(extlink);
@@ -408,4 +485,55 @@ function renderExperience() {
         $(card).append(description);
         $(proContainer).append(card);
     })
+}
+
+function renderPortfolio() {
+    let portfolio1 = $('#p-first');
+    let portfolio2 = $('#p-second');
+    let ifFirst = true;
+    let projects = personalData["PastProjects"];
+    projects.forEach((project) => {
+        let categories = ""
+        project["categories"].forEach((category) => {
+            if(categories === "") {
+                categories += category;
+            } else {
+                categories = categories + " " + category
+            }
+        })
+        let projectContainer = $('<li class="p-item" data-category="' + categories + '"></li>');
+        let projectContent = $('<a href="' + project["link"] + '"></a>');
+        let imgContainer = $('<div class="p-image"><img src="' +  project["img"] + '" alt="' + project["name"] + '"/></div>')
+        let captionContainer =$(`<div class="p-caption">
+                                    <div class="p-date">` + project["date"] + `</div>
+                                    <h3 class="p-title">` + project["name"] + `</h3>
+                                    <div class="p-desc">` + project["sDescription"] + `</div>
+                                    <div class="p-role">` + project["role"] + `</div>
+                                    <div class="p-browse">>>> For More</div>
+                                </div`);
+        $(projectContent).append(imgContainer);
+        $(projectContent).append(captionContainer);
+        $(projectContainer).append(projectContent);
+        if(ifFirst) {
+            $(portfolio1).append(projectContainer);
+            ifFirst = !ifFirst;
+        } else {
+            $(portfolio2).append(projectContainer);
+            ifFirst = !ifFirst;
+        }
+    })
+}
+
+function filterPortfolio(value) {
+	var list = $("#p-grid .p-item");
+	$(list).hide();
+	if (value == "all") {
+		$("#p-grid").find(".p-item").each(function (i) {
+			$(this).delay(200).fadeIn("fast");
+		});
+	} else {
+		$("#p-grid").find("li[data-category*=" + value + "]").each(function (i) {
+			$(this).delay(200).fadeIn("fast");
+		});
+	}
 }
