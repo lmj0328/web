@@ -373,6 +373,12 @@ function renderAboutMePage() {
     $('#home-page').hide();
     $('#about-me-page').show();
     $('#portfolio-page').hide();
+    if($('#home-page').css('display') === 'none') {
+        $("#navigation-bar nav").addClass("scrolled");
+        $("#navigation-bar .navbar-brand span").addClass("scrolled");
+        $("#navigation-bar .navbar-nav li a").addClass("scrolled");
+        $("#navigation-bar .navbar-nav i").addClass("scrolled");    
+    }
 }
 
 function renderPortfolioPage() {
