@@ -700,9 +700,9 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 }
 
 #portfolio-page .container{
-    margin: 0vh 7.5vw;
+    margin: 0vh 10vw;
     padding: 0;
-    max-width: 85vw;
+    max-width: 80vw;
 }
 
 #filters ul{
@@ -748,7 +748,7 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 
 #p-grid .p-item {
     display: flex;
-    margin: 10px;
+    margin: 15px;
 }
 
 #p-grid .p-item > a {
