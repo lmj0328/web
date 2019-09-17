@@ -320,7 +320,8 @@ const personalData = {
 // render navigation bar item
 
 
-// when window scroll, switch navigation bar stylesheet
+
+
 $(window).scroll(function() {
     if($(document).scrollTop() > 50 || $('#home-page').css('display') === 'none') {
         $("#navigation-bar nav").addClass("scrolled");
@@ -347,7 +348,7 @@ $('#filters li.filter').click(function() {
 });
 
 
-
+/* Render Page */
 function renderHomePage() {
     renderSkillSet();
     renderEducationHistory();
@@ -401,7 +402,7 @@ function renderSkillSet() {
     let skillCardContainer = $('#skill-card-container');
     const skillSet = personalData["SkillSet"];
     skillSet.forEach((skillCard) => {
-        let container = $('<div class="skill-card">')
+        let container = $('<div class="skill-card revealOnScroll">')
         let subContainer = $('<div></div>');
         let skillCategory = $(`<h3>` + skillCard.title + `</h3>`);
         let skillContainer = $('<div class="skill-container"></div>');
@@ -421,7 +422,7 @@ function renderEducationHistory() {
     let educationCardContainer = $('#education-card-container');
     const educationHistory = personalData["Education"];
     educationHistory.forEach((education) => {
-        let container = $('<div class="education-card">');
+        let container = $('<div class="education-card revealOnScroll">');
         // choose icon based on graduate status
         if(education["graduated"] === "yes") {
             $(container).append('<div class="education-icon"><i class="fas fa-graduation-cap"></i></div>');
@@ -461,7 +462,7 @@ function renderCourse() {
     const courseHistory = personalData["Courses"];
     courseHistory.forEach((course) => {
         course["classes"].forEach((classes) => {
-            $(courseCardContainer).append('<span class="' + course.class + '">' + classes + '</span>');
+            $(courseCardContainer).append('<span class="revealOnScroll ' + course.class + '">' + classes + '</span>');
         });
         let courseColorScheme = $('#course-color-scheme-container');
         let scheme = $('<div><div class="course-color-block" style="background-color:'+ course.color + ';"></div><span>' + course.type + '</span></div>');
@@ -478,7 +479,7 @@ function renderExperience() {
         colorContainer.append('<div class="pro-color-block-card"><div class="pro-color-block" style="background-color:'+ color[0] + ';"></div><span>' + color[1]+ '</span></div>')
     })
     experiences.forEach((experience) => {
-        let card = $('<div class="pro-card" style="border-left: 1vw solid ' + experience["categoryC"] + ';">')
+        let card = $('<div class="pro-card revealOnScroll" style="border-left: 1vw solid ' + experience["categoryC"] + ';">')
         if(experience["link"] !== "") {
             let extlink = $('<a href="' + experience["link"] + '"><div class="pro-external-icon"><span class="icon-attachment" aria-hidden="true"></span></div></a>');
             $(card).append(extlink);
@@ -546,3 +547,44 @@ function filterPortfolio(value) {
 		});
 	}
 }
+
+
+
+// when window scroll, switch navigation bar stylesheet
+
+var scroll = window.requestAnimationFrame || function(callback) {
+    window.setTimeout(callback,1000/60)
+};
+
+let revealOnScroll = document.querySelectorAll('.revealOnScroll');
+function checkifInView() {
+    revealOnScroll.forEach((element) => {
+        if(isElementInViewport(element)) {
+            $(element).addClass('current');
+            $(element).addClass('revealed');
+        } else {
+            $(element).removeClass('current');
+        }
+    })
+    scroll(checkifInView);
+}
+checkifInView();
+
+function isElementInViewport(el) {
+    // special bonus for those using jQuery
+    if (typeof jQuery === "function" && el instanceof jQuery) {
+      el = el[0];
+    }
+    var rect = el.getBoundingClientRect();
+    return (
+      (rect.top <= 0
+        && rect.bottom >= 0)
+      ||
+      (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.top <= (window.innerHeight || document.documentElement.clientHeight))
+      ||
+      (rect.top >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+    );
+}
+

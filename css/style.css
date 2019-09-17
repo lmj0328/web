@@ -209,11 +209,20 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
     padding: 10vh 35vw 16vh 15vw;
 }
 
-#about-me p {
+#about-me p, #about-me p.revealOnScroll {
     font-size: 1.3rem;
     color: #F6F4F1;
     font-family: 'Mukta Vaani', sans-serif;
     font-weight:300;
+    opacity: 0;
+    transform: translateY(5vh);
+    transition: opacity .3s ease-out .2s, transform .5s ease-in .2s;
+    will-change: opacity, transform;
+}
+
+#about-me p.revealOnScroll.revealed {
+    opacity: 1; 
+    transform: translateY(0);
 }
 
 #about-me h2 {
@@ -264,6 +273,27 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
     margin: 1vh .5vw;
     border-radius: 5px;
     width: 21vw;
+    opacity: 0;
+    transform: translateX(10vw);
+    transition: opacity 2s ease-out 0s , transform 2s ease-in 0.2s;
+    will-change: opacity, transform;
+}
+
+#skill-card-container  div.skill-card:nth-of-type(2n) {
+    transition-delay: 0.8s;
+}
+
+#skill-card-container  div.skill-card:nth-of-type(3n) {
+    transition-delay: 1.1s;
+}
+
+#skill-card-container  div.skill-card:nth-of-type(4n) {
+    transition-delay: 1.5s;
+}
+
+#skill-card-container div.skill-card.revealed {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 #skill-card-container  div.skill-card:hover {
@@ -336,6 +366,15 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 
 #education-card-container .education-card {
     margin: 6vh 0vw;
+    opacity: 0;
+    transform: translateX(10vw);
+    transition: opacity 2s ease-out 0s , transform 2s ease-in 0.2s;
+    will-change: opacity, transform;
+}
+
+#education-card-container .education-card.revealed {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 #education-card-container .education-card:last-of-type {
@@ -412,6 +451,16 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
     border: 1px solid #11365C;
     color: #11365C;
     font-weight: 300;
+
+    opacity: 0;
+    transform: translateY(2vh);
+    transition: opacity 1s ease-out 0s , transform 1s ease-in 0.2s;
+    will-change: opacity, transform;
+}
+
+#course-card-container span.revealed{
+    opacity: 1;
+    transform: translateY(0);
 }
 
 #course-card-container span:hover{
@@ -500,6 +549,17 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 #pro-card-container .pro-card {
     margin: 2vh 1vw 2vh 0.5vw;
     padding: 2.5vh 1vw 2.5vh 3vw;
+
+    opacity: 0;
+    transform: translateY(10vh);
+    transition: opacity 2s ease-out 0s , transform 2s ease-in 0.2s;
+    will-change: opacity, transform;
+}
+
+#pro-card-container .pro-card.revealed {
+    opacity: 1;
+    transform: translateY(0);
+
 }
 
 #pro-card-container h3 {
@@ -602,7 +662,6 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 }
 
 #hobbies-and-interest .hobbies-card {
-    border: .1vw dotted #748392;
     padding: 4vh 2vw 5vh 2vw;
     margin: 1vh .5vw;
     border-radius: 5px;
@@ -623,7 +682,7 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 }
 
 #hobbies-and-interest .hobbies-card span, #hobbies-and-interest .hobbies-card i {
-    font-size: 2rem;
+    font-size: 5rem;
     color: #F6F4F1;
 }
 
