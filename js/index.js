@@ -1,6 +1,9 @@
-
 let personalData = {};
-$.getJSON("data/data.json", function(json) {
+let filePath = "data/data.json";
+if ($('#portfolio').length == 1) {
+    filePath = "../data/data.json";
+}
+$.getJSON(filePath, function(json) {
     personalData = json;
      // this will show the info it in firebug console
 }).then(function() {
@@ -8,100 +11,73 @@ $.getJSON("data/data.json", function(json) {
 });
 
 function renderPage() {
-    $(window).scroll(function() {
-        if($(document).scrollTop() > 50 || $('#home-page').css('display') === 'none') {
-            $("#navigation-bar nav").addClass("scrolled");
-            $("#navigation-bar .navbar-brand span").addClass("scrolled");
-            $("#navigation-bar .navbar-nav li a").addClass("scrolled");
-            $("#navigation-bar .navbar-nav i").addClass("scrolled");    
-        } else {
-            $("#navigation-bar nav").removeClass("scrolled");
-            $("#navigation-bar .navbar-brand span").removeClass("scrolled");
-            $("#navigation-bar .navbar-nav li a").removeClass("scrolled");
-            $("#navigation-bar .navbar-nav i").removeClass("scrolled");    
-        } 
-    });
-
-    renderHomePage();
-
-    $('#filters li.filter').click(function() {
-        $(".filter").removeClass("current");
-        $(this).addClass("current");
-        
-        // filterPortfolio
-        var filter = $(this).attr('value');
-        filterPortfolio(filter);
-    });
-
-    // when window scroll, switch navigation bar stylesheet
-
-    var scroll = window.requestAnimationFrame || function(callback) {
-        window.setTimeout(callback,1000/60)
-    };
-
-    let revealOnScroll = document.querySelectorAll('.revealOnScroll');
-    function checkifInView() {
-        revealOnScroll.forEach((element) => {
-            if(isElementInViewport(element)) {
-                $(element).addClass('current');
-                $(element).addClass('revealed');
+    if ($('#home-page').length == 1) {
+        $(window).scroll(function() {
+            // console.log($('#home-page').css('display'));
+            if($(document).scrollTop() > 50) {
+                $("#navigation-bar nav").addClass("scrolled");
+                $("#navigation-bar .navbar-brand span").addClass("scrolled");
+                $("#navigation-bar .navbar-nav li a").addClass("scrolled");
+                $("#navigation-bar .navbar-nav i").addClass("scrolled");    
             } else {
-                $(element).removeClass('current');
-            }
-        })
-        scroll(checkifInView);
-    }
+                $("#navigation-bar nav").removeClass("scrolled");
+                $("#navigation-bar .navbar-brand span").removeClass("scrolled");
+                $("#navigation-bar .navbar-nav li a").removeClass("scrolled");
+                $("#navigation-bar .navbar-nav i").removeClass("scrolled");    
+            } 
+        });
+        renderHomePage();
 
-    checkifInView();
+        // when window scroll, switch navigation bar stylesheet
+
+        var scroll = window.requestAnimationFrame || function(callback) {
+            window.setTimeout(callback,1000/60)
+        };
+
+        let revealOnScroll = document.querySelectorAll('.revealOnScroll');
+        function checkifInView() {
+            revealOnScroll.forEach((element) => {
+                if(isElementInViewport(element)) {
+                    $(element).addClass('current');
+                    $(element).addClass('revealed');
+                } else {
+                    $(element).removeClass('current');
+                }
+            })
+            scroll(checkifInView);
+        }
+
+        checkifInView();
+    } else {
+        showNavBar();
+        if($('#portfolio-page').length == 1) {
+            renderPortfolio();
+            $('#filters li.filter').click(function() {
+                $(".filter").removeClass("current");
+                $(this).addClass("current");
+                
+                // filterPortfolio
+                var filter = $(this).attr('value');
+                filterPortfolio(filter);
+            });
+        } 
+    } 
 }
 
-    /* Render Page */
+/* Render Page */
 function renderHomePage() {
     renderSkillSet();
     renderEducationHistory();
     renderCourse();
     renderExperience();
-    renderPortfolio();
-    $('#about-me-page').hide();
-    $('#portfolio-page').hide();
-    $('#about-me-button').click(() => {
-        $(".nav-item").removeClass("active");
-        $('#about-me-button').addClass('active');
-        renderAboutMePage();
-    })
-
-    $('#portfolio-button').click(() => {
-        $(".nav-item").removeClass("active");
-        $('#portfolio-button').addClass('active');
-        renderPortfolioPage();
-    })
 }
 
-function renderAboutMePage() {
-    $('#home-page').hide();
-    $('#about-me-page').show();
-    $('#portfolio-page').hide();
-    if($('#home-page').css('display') === 'none') {
-        $("#navigation-bar nav").addClass("scrolled");
-        $("#navigation-bar .navbar-brand span").addClass("scrolled");
-        $("#navigation-bar .navbar-nav li a").addClass("scrolled");
-        $("#navigation-bar .navbar-nav i").addClass("scrolled");    
-    }
+function showNavBar() {
+    $("#navigation-bar nav").addClass("scrolled");
+    $("#navigation-bar .navbar-brand span").addClass("scrolled");
+    $("#navigation-bar .navbar-nav li a").addClass("scrolled");
+    $("#navigation-bar .navbar-nav i").addClass("scrolled");
 }
-
-function renderPortfolioPage() {
-    $('#home-page').hide();
-    $('#about-me-page').hide();
-    $('#portfolio-page').show();
-
-    if($('#home-page').css('display') === 'none') {
-        $("#navigation-bar nav").addClass("scrolled");
-        $("#navigation-bar .navbar-brand span").addClass("scrolled");
-        $("#navigation-bar .navbar-nav li a").addClass("scrolled");
-        $("#navigation-bar .navbar-nav i").addClass("scrolled");    
-    }
-}
-
 
 
 /* sub function */
@@ -224,8 +200,8 @@ function renderPortfolio() {
                                     <h3 class="p-title">` + project["name"] + `</h3>
                                     <div class="p-desc">` + project["sDescription"] + `</div>
                                     <div class="p-role">` + project["role"] + `</div>
-                                    <div class="p-browse"><a href="` + project["link"] + `'">>>> See More</a></div>'
-                                </div`);
+                                    <div class="p-browse">` + `<a href="` + project["link"] + `">>>> See More</a></div>'
+                                </div>`);
         $(projectContainer).append(imgContainer);
         $(projectContainer).append(captionContainer);
         $(projectContainer).append(projectContent);

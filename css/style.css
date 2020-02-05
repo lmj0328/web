@@ -60,7 +60,8 @@ h3 {
     padding-left: 50px;
     padding-right: 30px;
     margin-top: 20px;
-    font-family: 'Athiti', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
     color: #F7F5F5;
     text-shadow: 0.5px 0.5px #647B5E;
     letter-spacing: 1px;
@@ -72,21 +73,23 @@ h3 {
 }
 
 #navigation-bar .navbar-nav li.active {
-    font-weight:800;
+    font-weight: 300;
+    color: rgb(9, 30, 51);
 }
 
 
 #navigation-bar .navbar-nav li a {
     color: #F7F5F5;
-    font-family: 'Athiti', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
     text-shadow: 0.5px 0.5px #647B5E;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 #navigation-bar .navbar-nav li a:hover {
-    font-size: 1.15rem;
+    font-weight: 300;
     color: #F7F5F5!important;
-    padding-bottom:1vh;
+    padding-bottom: 1vh;
 }
 
 #navigation-bar .navbar-nav i {
@@ -100,23 +103,23 @@ h3 {
 }
 
 #navigation-bar .navbar-brand span.scrolled {
-    color: rgb(41, 27, 5);
+    color: #11365C;
     text-shadow: 0.5px 0.5px #F7F5F5;
 }
 
 #navigation-bar .navbar-nav li a.scrolled {
-    color: rgb(41, 27, 5);
+    color: #11365C;
     text-shadow: 0.5px 0.5px #F7F5F5;
 }
 
 #navigation-bar .navbar-nav li a.scrolled:hover {
-    font-size: 1.15rem;
-    color: rgb(41, 27, 5)!important;
+    font-size: 1rem;
+    color: rgb(3, 9, 15)!important;
     padding-bottom:1vh;
 }
 
 #navigation-bar .navbar-nav i.scrolled {
-    color: rgb(41, 27, 5)!important;
+    color: #11365C!important;
 }
 
 /* Nav Link Animation*/
@@ -714,21 +717,22 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 }
 
 #filters li, #filters a {
-    color: rgb(41, 27, 5);
+    color: #11365C;
 }
 
 #filters li {
     display: inline-block;
     padding: 0 0 3px 0;
     margin: 0 25px;
+    font-family: 'Athiti', sans-serif;
 }
 
 #filters li:hover {
-    border-bottom: 3px solid rgb(41, 27, 5);
+    border-bottom: 3px solid #11365C;
 }
 
 #filters li.current {
-    border-bottom: 3px solid rgb(41, 27, 5);
+    border-bottom: 3px solid #11365C;
 }
 
 #filters a:hover {
