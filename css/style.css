@@ -100,23 +100,23 @@ h3 {
 }
 
 #navigation-bar .navbar-brand span.scrolled {
-    color: #11365C;
+    color: rgb(41, 27, 5);
     text-shadow: 0.5px 0.5px #F7F5F5;
 }
 
 #navigation-bar .navbar-nav li a.scrolled {
-    color: #11365C;
+    color: rgb(41, 27, 5);
     text-shadow: 0.5px 0.5px #F7F5F5;
 }
 
 #navigation-bar .navbar-nav li a.scrolled:hover {
     font-size: 1.15rem;
-    color: #11365C!important;
+    color: rgb(41, 27, 5)!important;
     padding-bottom:1vh;
 }
 
 #navigation-bar .navbar-nav i.scrolled {
-    color: #11365C!important;
+    color: rgb(41, 27, 5)!important;
 }
 
 /* Nav Link Animation*/
@@ -714,7 +714,7 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 }
 
 #filters li, #filters a {
-    color: #11365C;
+    color: rgb(41, 27, 5);
 }
 
 #filters li {
@@ -724,11 +724,11 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 }
 
 #filters li:hover {
-    border-bottom: 3px solid #11365C;
+    border-bottom: 3px solid rgb(41, 27, 5);
 }
 
 #filters li.current {
-    border-bottom: 3px solid #11365C;
+    border-bottom: 3px solid rgb(41, 27, 5);
 }
 
 #filters a:hover {
@@ -738,27 +738,28 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 
 #p-grid .p-item {
     display: flex;
-    margin: 15px;
-    width: 60vw;
+    margin: 1vh 5vw 5vh 5vw;
+    width: 50vw;
     height: 30vh;
-    border: 1px solid #748392;
+    background-color: rgb(255, 255, 255);
+    /* border: 1px solid rgba(41, 27, 5, 0.555); */
     position: relative;
     border-radius: 5px;
-    box-shadow: 0px 3px 13px -6px #74839293);
+    box-shadow: 0px 3px 13px -6px rgba(41, 27, 5, 0.219);
 
 }
-
 
 #p-grid .p-image {
     display: block;
     position: relative;
     overflow: hidden;
+    border-radius: 5px 0px 0px 5px;
 }
 
 
 #p-grid .p-image img {
     object-fit: cover;
-    width: 30vh;
+    width: 40vh;
     height: 30vh;;
 }
 
@@ -784,18 +785,18 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 }
 
 #p-grid .p-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin: 1.25vh 0vw 0.5vh 0vw;
     font-family: 'Nunito', sans-serif;
 }
 
 #p-grid .p-desc {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin: 0vh 0vw 2vh 0vw;
 }
 
 #p-grid .p-role {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 5vh;
     font-weight: 300;
 }
@@ -807,7 +808,7 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
     font-family: 'Mukta Vaani', sans-serif;
     color: #949ca7;
     position: absolute;
-    bottom: 1vh;
+    bottom: 2vh;
     right: 2vw;
     font-size: 1.3rem;
 }

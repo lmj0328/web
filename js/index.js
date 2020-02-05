@@ -205,9 +205,7 @@ function renderExperience() {
 }
 
 function renderPortfolio() {
-    let portfolio1 = $('#p-first');
-    let portfolio2 = $('#p-second');
-    let ifFirst = true;
+    let portfolio = $('#p-grid');
     let projects = personalData["PastProjects"];
     projects.forEach((project) => {
         let categories = ""
@@ -231,13 +229,7 @@ function renderPortfolio() {
         $(projectContainer).append(imgContainer);
         $(projectContainer).append(captionContainer);
         $(projectContainer).append(projectContent);
-        if(ifFirst) {
-            $(portfolio1).append(projectContainer);
-            ifFirst = !ifFirst;
-        } else {
-            $(portfolio2).append(projectContainer);
-            ifFirst = !ifFirst;
-        }
+        $(portfolio).append(projectContainer);
     })
 }
 

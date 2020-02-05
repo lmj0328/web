@@ -104,6 +104,22 @@
     ],
     "PastProjects": [
         {
+            "name":"Centralia Car OS",
+            "client": "Mobile Application Design @UW",
+            "role":"UX Designer",
+            "link": "https://drive.google.com/a/uw.edu/file/d/1hpINeCU0cPLwzJw-ik3b_LD5YQy5HKbQ/view?usp=sharing",
+            "duration": "10 Weeks",
+            "date":"September 2019 - December 2019",
+            "skills":[["Design", "icon-tools", "40%"]],
+            "location": "Seattle, WA",
+            "sDescription": "Minimalistic, intuitive, and responsive Car OS designed for future car users",
+            "lDescription": "",
+            "designTools": ["Figma"],
+            "tools":["Prototyping", "User Story", "User Flow", "Storyboarding", "A/B Testing"],
+            "img":"img/project/centraliaCarOS.png",
+            "categories":["design"]
+        },
+        {
             "name":"TabletOrder",
             "client": "Intern Project @Restmesh Inc.",
             "role":"UX Designer, Full-stack Developer",
@@ -114,7 +130,8 @@
             "location": "Redmond, WA",
             "sDescription": "Online self-order POS transaction system",
             "lDescription": "",
-            "tools":["Adobe AI", "Adobe XD", "HTML5", "CSS3", "Javascript", "Jquery"],
+            "designTools": ["Adobe AI", "Adobe XD"],
+            "tools":["HTML5", "CSS3", "Javascript", "Jquery"],
             "img":"img/project/tabletorder.png",
             "categories":["front-end"]
         },
@@ -158,7 +175,7 @@
             "lDescription": "",
             "tools":["HTML5", "CSS3", "Javascript", "Jquery", "React"],
             "img":"img/project/speneeds.png",
-            "categories":["design", "front-end"]
+            "categories":["front-end"]
         },
         {
             "name":"Legistar",
