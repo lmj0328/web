@@ -60,6 +60,13 @@ function renderPage() {
                 var filter = $(this).attr('value');
                 filterPortfolio(filter);
             });
+        }
+        
+        if ($('.post-images-slider').length > 0 ) {
+            $('.post-images-slider').flexslider({
+                animation: "slide",
+                smoothHeight: true,
+            });
         } 
     } 
 }
