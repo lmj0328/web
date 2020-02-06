@@ -214,6 +214,15 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
     text-align: center;
 }
 
+#footer {
+    color: #F6F4F1;
+    text-align: center;
+    background-color: rgb(33, 37, 41);
+    padding: 2vh 0vw;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+}
+
 /*--------------------------------------------------------------
     HOME PAGE - ABOUT ME
 --------------------------------------------------------------*/
@@ -708,13 +717,13 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 
 #portfolio-page {
     background-color: #F6F4F1;
-    padding: 18vh 0vw 2vh 0vw;
+    padding: 18vh 0vw 0vh 0vw;
     height: 100vh;
     overflow-y: auto;
 }
 
 #portfolio-page .container{
-    margin: 0vh 20vw;
+    margin: 0vh 20vw 2vh 20vw;
     padding: 0;
     max-width: 60vw;
 }
