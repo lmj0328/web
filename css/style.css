@@ -1,6 +1,6 @@
 /* Brand Design Color */
 html { 
-    font-size: 13px; 
+    font-size: 11px; 
 }
 
 .font-light {
@@ -727,9 +727,9 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 }
 
 #portfolio-page .container{
-    margin: 0vh 20vw 2vh 20vw;
+    margin: 0vh 10vw 2vh 10vw;
+    max-width: 80vw;
     padding: 0;
-    max-width: 60vw;
     min-height:80vh;
 }
 
@@ -767,7 +767,7 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 #p-grid .p-item {
     display: flex;
     margin: 1vh 5vw 5vh 5vw;
-    width: 50vw;
+    width: 70vw;
     height: 30vh;
     background-color: rgb(255, 255, 255);
     /* border: 1px solid rgba(41, 27, 5, 0.555); */
@@ -1027,11 +1027,36 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 }
 
 
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 800px) {
+    html { 
+        font-size: 15px; 
+    }
+
+    #portfolio-page .container{
+        margin: 0vh 15vw 2vh 15vw;
+        max-width: 70vw;
+    }
+
+    #p-grid .p-item {
+        width: 60vw;
+    }
+}
+  
+
+@media screen and (min-width: 1000px) {
     html { 
         font-size: 16px; 
     }
-  }
+
+    #portfolio-page .container{
+        margin: 0vh 20vw 2vh 20vw;
+        max-width: 60vw;
+    }
+
+    #p-grid .p-item {
+        width: 50vw;
+    }
+}
   
 
 
