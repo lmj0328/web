@@ -104,6 +104,22 @@
     ],
     "PastProjects": [
         {
+            "name":"CarpoolRide",
+            "client": "Human Comuputer Interaction @UW",
+            "role":"UX Designer",
+            "link": "portfolio/carpoolRide.html",
+            "duration": "10 Weeks",
+            "date":"January 2020 - Present",
+            "skills":[["Design", "icon-tools", "40%"]],
+            "location": "Seattle, WA",
+            "sDescription": "Safety-driven carpool app that allows you to arrive anywhere on time",
+            "lDescription": "",
+            "designTools": ["Figma"],
+            "tools":["Prototyping", "User Story", "User Flow", "Storyboarding", "A/B Testing"],
+            "img":"img/project/carpool/Rachel_And_Nadir_Story.png",
+            "categories":["design"]
+        }, 
+        {
             "name":"Centralia Car OS",
             "client": "Mobile Application Design @UW",
             "role":"UX Designer",

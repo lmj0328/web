@@ -42,6 +42,8 @@ function renderPage() {
                     $(element).addClass('revealed');
                 } else {
                     $(element).removeClass('current');
+                    // $(element).removeClass('revealed');
+
                 }
             })
             scroll(checkifInView);

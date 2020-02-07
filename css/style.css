@@ -870,7 +870,7 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
     font-weight: 300;
     line-height: 1.6;
     margin: 2vh 25vw 5vh 25vw;
-    text-align: left;
+    text-align: center;
 }
 
 #portfolio .portfolio-container .main-imgholder {
@@ -916,7 +916,7 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 
 #portfolio .portfolio-container .sub-section {
     text-align: left;
-    margin: 5vh 22vw;
+    margin: 7vh 22vw;
     
 }
 
@@ -924,6 +924,24 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
     color: #11365C;
     font-size: 1.7rem;
     margin: 2vh 0vw 2vh 0vw;
+}
+
+#portfolio .portfolio-container .sub-section h3 {
+    color: #11365C;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: 'Mukta Vaani', sans-serif;
+
+    margin: 5vh 0vw 3vh 0vw;
+}
+
+
+#portfolio .portfolio-container .sub-section h4 {
+    color: rgb(33, 37, 41);
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-family: 'Mukta Vaani', sans-serif;
+    margin: 3vh 0vw 1vh 0vw;
 }
 
 #portfolio .portfolio-container .sub-section p {
@@ -938,14 +956,14 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 
 #portfolio .portfolio-container .sub-section div.img-1 img {
     text-align: center;
-    max-width: 98%;
+    max-width: 100%;
     margin: 2vh 0vw 2vh 0vw;
 }
 
 #portfolio .portfolio-container .sub-section div.img-2 img {
     text-align: center;
-    max-width: 47%;
-    margin: 2vh 1vw 2vh 0vw;
+    max-width: 49%;
+    margin: 2vh 0.vw 2vh 0vw;
 }
 
 
