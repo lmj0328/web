@@ -726,6 +726,7 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
     margin: 0vh 20vw 2vh 20vw;
     padding: 0;
     max-width: 60vw;
+    min-height:80vh;
 }
 
 #filters ul{
