@@ -1,6 +1,6 @@
 /* Brand Design Color */
 html { 
-    font-size: 11px; 
+    font-size: 14px; 
 }
 
 .font-light {
@@ -954,7 +954,6 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
     color: rgb(33, 37, 41);
     font-size: 1.1rem;
     font-weight: 300;
-    /* font-family: 'Nunito', sans-serif; */
 }
 
 #portfolio .portfolio-container .sub-section ul {
@@ -1008,8 +1007,6 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 
 }
 
-
-
 #portfolio .portfolio-container .sub-section div {
     text-align: center;
 }
@@ -1039,6 +1036,26 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 
     #p-grid .p-item {
         width: 60vw;
+    }
+
+    #portfolio .portfolio-container .title p {
+        margin: 2vh 15vw 5vh 15vw;
+
+    }
+
+    #portfolio .portfolio-container .info-chart {
+        margin: 7vh 15vw;
+
+    }
+
+    #portfolio .portfolio-container .break-line {
+        margin: 7vh 15vw;
+
+    }
+
+    #portfolio .portfolio-container .sub-section {
+        margin: 7vh 15vw;
+
     }
 }
   
