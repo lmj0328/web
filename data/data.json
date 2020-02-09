@@ -210,12 +210,12 @@
         {
             "name":"Perceptions of Waiting Time",
             "client": "Time Design @UW",
-            "role":"User Researcher",
+            "role":"UX Designer, User Researcher",
             "link": "https://docs.google.com/document/d/1MW2fJrQa0U6Yz8ndTt5QSK1JNOGe0zIoC8R_xkU0epg/edit?usp=sharing",
             "duration": "10 weeks",
             "date":"Jan 2019 - Mar 2019",
             "location": "Seattle, WA",
-            "sDescription": "Research and Literature analysis on how designs impact people’s perceptions of waiting time",
+            "sDescription": "Literature analysis on the current design patterns impact people’s perceptions of waiting time",
             "lDescription": "",
             "tools":["Research"],
             "img":"img/project/waitingTime.png",
@@ -238,7 +238,7 @@
         {
             "name":"Portion Assisstant",
             "client": "Design Methods @UW",
-            "role":"UI Designer, UX Designer, User Researcher",
+            "role":"UX Designer, User Researcher",
             "link":"https://drive.google.com/file/d/1ZAa1piN11mKVTp4QQO_Bkl3KJrYLQIZ2/view?usp=sharing",
             "duration": "9 weeks",
             "date":"Jun 2018 - Aug 2018",
