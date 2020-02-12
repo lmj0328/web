@@ -236,20 +236,6 @@
             "categories":["data-av"]
         },
         {
-            "name":"Portion Assisstant",
-            "client": "Design Methods @UW",
-            "role":"UX Designer, User Researcher",
-            "link":"https://drive.google.com/file/d/1ZAa1piN11mKVTp4QQO_Bkl3KJrYLQIZ2/view?usp=sharing",
-            "duration": "9 weeks",
-            "date":"Jun 2018 - Aug 2018",
-            "location": "Seattle, WA",
-            "sDescription": "An add-on function in yelp aim to reduce food waste throught portion indication",
-            "lDescription": "",
-            "tools":["Adobe Illustrator"],
-            "img":"img/project/menuCalculator.png",
-            "categories":["design"]
-        },
-        {
             "name":"Form & Color Design",
             "client": "Design Class @UW",
             "role":"Graphic Designer",
@@ -263,6 +249,21 @@
             "img":"img/project/design265.png",
             "categories":["design"]
         },
+        {
+            "name":"Portion Assisstant",
+            "client": "Design Methods @UW",
+            "role":"UX Designer, User Researcher",
+            "link":"https://drive.google.com/file/d/1ZAa1piN11mKVTp4QQO_Bkl3KJrYLQIZ2/view?usp=sharing",
+            "duration": "9 weeks",
+            "date":"Jun 2018 - Aug 2018",
+            "location": "Seattle, WA",
+            "sDescription": "An add-on function in yelp aim to reduce food waste throught portion indication",
+            "lDescription": "",
+            "tools":["Adobe Illustrator"],
+            "img":"img/project/menuCalculator.png",
+            "categories":["design"]
+        },
+        
         {
             "name":"Politify",
             "client": "Informatics Foundation @UW",
