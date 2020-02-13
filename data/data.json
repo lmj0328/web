@@ -194,20 +194,6 @@
             "categories":["front-end"]
         },
         {
-            "name":"Legistar",
-            "client": "Seattle Hall Council",
-            "role":"System Designer, UI Designer",
-            "link": "https://drive.google.com/file/d/1XZs_VEiBDHfHWTPqzuKEBDlC4YcAAhyk/view?usp=sharing",
-            "duration": "10 weeks",
-            "date":"Jan 2019 - Mar 2019",
-            "location": "Seattle, WA",
-            "sDescription": "Research and develop requirement specifications for Seattle Hall Concil's legislation system",
-            "lDescription": "",
-            "tools":["Adobe Illustrator"],
-            "img":"img/project/legistar.png",
-            "categories":["research"]
-        },
-        {
             "name":"Perceptions of Waiting Time",
             "client": "Time Design @UW",
             "role":"UX Designer, User Researcher",
@@ -219,6 +205,20 @@
             "lDescription": "",
             "tools":["Research"],
             "img":"img/project/waitingTime.png",
+            "categories":["research"]
+        },
+        {
+            "name":"Legistar",
+            "client": "Seattle Hall Council",
+            "role":"System Designer, UI Designer",
+            "link": "https://drive.google.com/file/d/1XZs_VEiBDHfHWTPqzuKEBDlC4YcAAhyk/view?usp=sharing",
+            "duration": "10 weeks",
+            "date":"Jan 2019 - Mar 2019",
+            "location": "Seattle, WA",
+            "sDescription": "Research and develop requirement specifications for Seattle Hall Concil's legislation system",
+            "lDescription": "",
+            "tools":["Adobe Illustrator"],
+            "img":"img/project/legistar.png",
             "categories":["research"]
         },
         {

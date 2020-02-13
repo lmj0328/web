@@ -8,12 +8,13 @@ $.getJSON(filePath, function(json) {
      // this will show the info it in firebug console
 }).then(function() {
     renderPage(); 
+    
 });
 
 function renderPage() {
     if ($('#home-page').length == 1) {
         $(window).scroll(function() {
-            // console.log($('#home-page').css('display'));
+            // when window scroll, switch navigation bar stylesheet
             if($(document).scrollTop() > 50) {
                 $("#navigation-bar nav").addClass("scrolled");
                 $("#navigation-bar .navbar-brand span").addClass("scrolled");
@@ -25,31 +26,32 @@ function renderPage() {
                 $("#navigation-bar .navbar-nav li a").removeClass("scrolled");
                 $("#navigation-bar .navbar-nav i").removeClass("scrolled");    
             } 
+            var scroll = window.requestAnimationFrame || function(callback) {
+                window.setTimeout(callback,1000/60)
+            };
+    
+            let revealOnScroll = document.querySelectorAll('.revealOnScroll');
+            function checkifInView() {
+                revealOnScroll.forEach((element) => {
+                    if(isElementInViewport(element)) {
+                        $(element).addClass('current');
+                        $(element).addClass('revealed');
+                    } else {
+                        $(element).removeClass('current');
+                        // $(element).removeClass('revealed');
+    
+                    }
+                })
+                
+            }
+    
+            checkifInView();
+    
         });
         renderHomePage();
 
-        // when window scroll, switch navigation bar stylesheet
-
-        var scroll = window.requestAnimationFrame || function(callback) {
-            window.setTimeout(callback,1000/60)
-        };
-
-        let revealOnScroll = document.querySelectorAll('.revealOnScroll');
-        function checkifInView() {
-            revealOnScroll.forEach((element) => {
-                if(isElementInViewport(element)) {
-                    $(element).addClass('current');
-                    $(element).addClass('revealed');
-                } else {
-                    $(element).removeClass('current');
-                    // $(element).removeClass('revealed');
-
-                }
-            })
-            scroll(checkifInView);
-        }
-
-        checkifInView();
+        
+        
     } else {
         showNavBar();
         if($('#portfolio-page').length == 1) {
@@ -79,6 +81,7 @@ function renderHomePage() {
     renderEducationHistory();
     renderCourse();
     renderExperience();
+    
 }
 
 function showNavBar() {

@@ -1,6 +1,8 @@
 /* Brand Design Color */
 html { 
     font-size: 16px; 
+    scroll-behavior: smooth;
+
 }
 
 .font-light {
@@ -178,7 +180,8 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 --------------------------------------------------------------*/
 
 /* home */
-.home-section {
+
+#home-page .home-section {
     position: relative;
     background-repeat: no-repeat;
     background-position: center center;
@@ -187,6 +190,7 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
     background-size: cover;
     height: 88vh; 
 }
+
 
 .title-size-1 {
     font-weight: 400;
@@ -210,7 +214,41 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
     height: 100%;
     width: 100%;
     margin: 0 auto;
+    padding-top: 15vh;
 }
+
+
+#home-screen a button {
+    display: inline-block;
+    margin: 5vh 1vw;
+    width: 18vw;
+    height: 7vh;
+    border: 0px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 13px -6px rgb(41, 27, 5);
+    color: #F6F4F1;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    background-color: rgba(134, 111, 111, 0.5);
+    outline: none;
+    transition: background-color 0.5s ease;
+}
+
+#home-screen a:nth-of-type(2) button {
+    background-color: rgba(112, 133, 145, 0.5);
+}
+
+#home-screen a button:hover {
+    /* background-color: rgba(184, 233, 206, 0.76); */
+    background-color: rgba(91, 218, 148, 0.514);
+}
+
+#home-screen a button:active { 
+    border-style: outset;
+}
+
+
+
 
 .caption-content {
     display: table-cell;
@@ -226,6 +264,9 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
     font-family: 'Nunito', sans-serif;
     font-weight: 300;
 }
+
+
+
 
 /*--------------------------------------------------------------
     HOME PAGE - ABOUT ME
