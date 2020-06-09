@@ -806,7 +806,7 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 }
 
 #p-grid .p-item {
-    display: flex;
+    /* display: absolute; */
     margin: 1vh 5vw 5vh 5vw;
     width: 80vw;
     height: 30vh;
@@ -815,27 +815,30 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
     position: relative;
     border-radius: 5px;
     box-shadow: 0px 3px 13px -6px rgba(41, 27, 5, 0.219);
-
 }
 
 #p-grid .p-image {
-    display: block;
-    position: relative;
+    display: inline-block;
+    position: absolute;
+    left:0;
     overflow: hidden;
     border-radius: 5px 0px 0px 5px;
 }
 
-
 #p-grid .p-image img {
     object-fit: cover;
-    width: 40vh;
-    height: 30vh;;
+    object-position: center;
+    width: 35vw;
+    height: 30vh;
 }
 
 
 #p-grid .p-caption {
-    display: block;
-    width: 40vw;
+    display: inline-block;
+    position: absolute;
+    right:0;
+    width: 45vw;
+    height:100%;
     padding: 2vh 2vw;
 }
 
@@ -1114,6 +1117,15 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
         width: 70vw;
     }
 
+    #p-grid .p-image img {
+        width: 25vw;
+    }
+    
+    #p-grid .p-caption {
+ 
+        width: 45vw;
+    }
+
     #portfolio .portfolio-container .title p {
         margin: 2vh 20vw 5vh 20vw;
 
@@ -1144,6 +1156,15 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 
     #p-grid .p-item {
         width: 50vw;
+    }
+    
+    #p-grid .p-image img {
+        width: 15vw;
+    }
+    
+    #p-grid .p-caption {
+ 
+        width: 35vw;
     }
 
     #portfolio .portfolio-container .main-imgholder img {

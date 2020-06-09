@@ -1,6 +1,19 @@
 {
     "ProfessionalExperience": [
         {
+            "companyN":"Restmesh Inc.",
+            "role": "Front-End Web Developer",
+            "date": "Jul 2019 - Aug 2019",
+            "location": "Redmond, WA",
+            "description":[
+                 "Work in the cloud-based IT solutions start-up’s core engineering team as a front-end development engineer",
+                 "Based on the original transaction system, build, prototype, and implement a new self-order POS transaction system that specifically target android and apple tablets, using HTML5/CSS3 and Jquery.",
+                 "Design, protototype and implement an electronic interactive menu system, using React.js."],
+             "link":"https://www.restmesh.com/home.html",
+             "category":"internship",
+             "categoryC":"#748392"
+         },
+        {
            "companyN":"Restmesh Inc.",
            "role": "Front-End Web Developer",
            "date": "Jul 2019 - Aug 2019",
@@ -104,17 +117,49 @@
     ],
     "PastProjects": [
         {
-            "name":"CarpoolRide",
+            "name":"Genemod Internship",
+            "client": "UX Designer Internship (remote) @Genemod",
+            "role":"UX Designer, User Researcher",
+            "link": "https://app.genemod.net/",
+            "duration": "3 months",
+            "date":"March 2020 - June 2020",
+            "skills":[["Design", "icon-tools", "100%"]],
+            "location": "Seattle, WA",
+            "sDescription": "Research Lab Inventory Management System",
+            "lDescription": "",
+            "designTools": ["Adobe XD"],
+            "tools":["Prototyping", "Semi-structured Interview", "User Flow Chart", "A/B Testing"],
+            "img":"img/project/genemod.png",
+            "categories":["design"]
+        }, 
+        {
+            "name":"Mirror",
+            "client": "Informatics Capstone @UW",
+            "role":"Full-stack Developer, UX Designer, Project Manager",
+            "link": "https://lmj0328.github.io/SocialMediaReport/",
+            "duration": "6 months",
+            "date":"January 2020 - June 2020",
+            "skills":[["Design", "icon-tools", "30%"], ["Development", "icon-tools-2", "70%"]],
+            "location": "Seattle, WA",
+            "sDescription": "Open-source project for yearly social media report",
+            "lDescription": "",
+            "designTools": ["Figma"],
+            "tools":["Prototyping", "User Story", "User Flow", "Storyboarding", "A/B Testing"],
+            "img":"img/project/mirror.png",
+            "categories":["front-end", "design", "data-av"]
+        }, 
+        {
+            "name":"PoolBuddy",
             "client": "Human Comuputer Interaction @UW",
             "role":"UX Designer",
             "link": "portfolio/carpoolRide.html",
             "duration": "10 Weeks",
-            "date":"January 2020 - Present",
-            "skills":[["Design", "icon-tools", "40%"]],
+            "date":"January 2020 - March 2020",
+            "skills":[["Design", "icon-tools", "100%"]],
             "location": "Seattle, WA",
             "sDescription": "Safety-driven carpool app that allows you to arrive anywhere on time",
             "lDescription": "",
-            "designTools": ["Figma"],
+            "designTools": ["Adobe XD"],
             "tools":["Prototyping", "User Story", "User Flow", "Storyboarding", "A/B Testing"],
             "img":"img/project/carpool/Rachel_And_Nadir_Story.png",
             "categories":["design"]
