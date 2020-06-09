@@ -1,15 +1,16 @@
 {
     "ProfessionalExperience": [
         {
-            "companyN":"Restmesh Inc.",
-            "role": "Front-End Web Developer",
-            "date": "Jul 2019 - Aug 2019",
-            "location": "Redmond, WA",
+            "companyN":"Genemod",
+            "role": "UX Designer",
+            "date": "Jan 2020 - Mar 2020",
+            "location": "Seattle, WA",
             "description":[
-                 "Work in the cloud-based IT solutions start-up’s core engineering team as a front-end development engineer",
-                 "Based on the original transaction system, build, prototype, and implement a new self-order POS transaction system that specifically target android and apple tablets, using HTML5/CSS3 and Jquery.",
-                 "Design, protototype and implement an electronic interactive menu system, using React.js."],
-             "link":"https://www.restmesh.com/home.html",
+                "Work in the research-focused UX-driven start-up’s core designer team.",
+                "Conduct user research and actively practice agile ideation, design and prototyping using Adobe Creative Cloud.",
+                "Design and refine lab inventory management tool, supporting dark mode, data analytic, and customer-focused features.",
+                "Working cross-team and synthesize feedback."],
+             "link":"https://genemod.net/",
              "category":"internship",
              "categoryC":"#748392"
          },
