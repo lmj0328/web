@@ -325,11 +325,16 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
     margin: 2vh 0vw;
 }
 
-#skill-set hr, #education hr {
-    width: 86vw;
+#skill-set hr, #education hr  {
     border-top: 1px solid #748392;
     margin: 2vh 1vw 4vh 1vw;
 }
+
+#skill-set hr {
+    width: 86vw;
+
+}
+
 
 #skill-card-container {
     width: 88vw;
