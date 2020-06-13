@@ -2,7 +2,7 @@
     "ProfessionalExperience": [
         {
             "companyN":"Genemod",
-            "role": "UX Designer",
+            "role": "UX Designer Intern",
             "date": "Jan 2020 - Mar 2020",
             "location": "Seattle, WA",
             "description":[
@@ -16,7 +16,7 @@
          },
         {
            "companyN":"Restmesh Inc.",
-           "role": "Front-End Web Developer",
+           "role": "Front-End Web Developer Intern",
            "date": "Jul 2019 - Aug 2019",
            "location": "Redmond, WA",
            "description":[

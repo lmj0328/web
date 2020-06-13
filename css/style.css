@@ -181,13 +181,11 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 
 /* home */
 #home-page {
-    overflow: hidden;
-    -ms-overflow-style: none;
+    overflow-y:auto;
+    height:100vh;
 }
 
-#home-page::-webkit-scrollbar {
-    display: none;
-}
+
 
 #home-page .home-section {
     position: relative;
@@ -293,6 +291,7 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
     transform: translateY(5vh);
     transition: opacity .3s ease-out .2s, transform .5s ease-in .2s;
     will-change: opacity, transform;
+
 }
 
 #about-me p.revealOnScroll.revealed {
@@ -430,7 +429,7 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 
 #education {
     background-color: #11365C;
-    padding: 12vh 22vw 16vh 22vw
+    padding: 12vh 22vw 16vh 22vw;
 }
 
 #education h2, #education h3, #education p, #education-card-container .education-icon i {
@@ -503,7 +502,7 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 #course {
     background-color: #F6F4F6;
     padding: 13vh 22vw 16vh 22vw;
-    height: 88vh;
+    position:relative;
 }
 
 #course hr {
@@ -522,8 +521,7 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 
 #course-card-container {
     text-align: left;
-    margin: 2vh 0vw 2vh -5vw;
-    float: left;
+    margin: 2vh 0vw 2vh -3vw;
     width: 54vw;
 }
 
@@ -541,6 +539,8 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
     transform: translateY(2vh);
     transition: opacity 1s ease-out 0s , transform 1s ease-in 0.2s;
     will-change: opacity, transform;
+    animation-timing-function: ease;
+
 }
 
 #course-card-container span.revealed{
@@ -584,8 +584,9 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 }
 
 #course-color-scheme-container {
-    float: right;
-    margin: 3vh -3.5vw 0vh 0vw;
+    position: absolute;
+    top: 22vh;
+    right:20vw;
 }
 
 #course-color-scheme-container span {
@@ -706,10 +707,19 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 /*--------------------------------------------------------------
     ABOUT ME PAGE - WHY INFORMATICS AND PSYCHOLOGY??  HOBBIES-AND-INTEREST??
 --------------------------------------------------------------*/
+#about-me-page {
+    padding-top: 12vh;
+    overflow-y:auto;
+    height:100vh;
+}
 
 /* why-informatics and why-psychology */
 #why-informatics, #hobbies-and-interest {
     padding: 16vh 15vw 16vh 15vw;
+}
+
+#why-informatics {
+    padding-top: 4vh;
 }
 
 #why-informatics p, #hobbies-and-interest h3 {

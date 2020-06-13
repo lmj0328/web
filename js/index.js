@@ -13,9 +13,10 @@ $.getJSON(filePath, function(json) {
 
 function renderPage() {
     if ($('#home-page').length == 1) {
-        $(window).scroll(function() {
+        $("#home-page").scroll(function() {
+
             // when window scroll, switch navigation bar stylesheet
-            if($(document).scrollTop() > 50) {
+            if($("#home-page").scrollTop() > 50) {
                 $("#navigation-bar nav").addClass("scrolled");
                 $("#navigation-bar .navbar-brand span").addClass("scrolled");
                 $("#navigation-bar .navbar-nav li a").addClass("scrolled");
@@ -44,14 +45,9 @@ function renderPage() {
                 })
                 
             }
-    
             checkifInView();
-    
         });
         renderHomePage();
-
-        
-        
     } else {
         showNavBar();
         if($('#portfolio-page').length == 1) {
