@@ -180,12 +180,19 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 --------------------------------------------------------------*/
 
 /* home */
+#home-page {
+    overflow: hidden;
+    -ms-overflow-style: none;
+}
+
+#home-page::-webkit-scrollbar {
+    display: none;
+}
 
 #home-page .home-section {
     position: relative;
     background-repeat: no-repeat;
     background-position: center center;
-    width: 100vw;
     z-index: 0;
     background-size: cover;
     height: 100vh; 
@@ -310,6 +317,8 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
 #skill-set {
     padding: 12vh 6vw 16vh 6vw;
     background-color: #F6F4F1;
+    overflow-x: hidden;
+
 }
 
 #skill-set h2, #skill-set div.icon-container, #skill-set h3{
@@ -340,6 +349,7 @@ div.borderXwidth a.scrolled:before, div.borderXwidth a.scrolled:after
     width: 88vw;
     display: flex;
     flex-wrap: wrap;
+
 }
 
 #skill-card-container  div.skill-card {
