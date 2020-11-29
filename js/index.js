@@ -8,12 +8,11 @@ $.getJSON(filePath, function(json) {
      // this will show the info it in firebug console
 }).then(function() {
     renderPage(); 
-    
 });
 
 function renderPage() {
     if ($('#home-page').length == 1) {
-        $("#home-page").scroll(function() {
+        $("#home-page").scroll(() => {
 
             // when window scroll, switch navigation bar stylesheet
             if($("#home-page").scrollTop() > 50) {
@@ -27,7 +26,7 @@ function renderPage() {
                 $("#navigation-bar .navbar-nav li a").removeClass("scrolled");
                 $("#navigation-bar .navbar-nav i").removeClass("scrolled");    
             } 
-            var scroll = window.requestAnimationFrame || function(callback) {
+            window.requestAnimationFrame || function(callback) {
                 window.setTimeout(callback,1000/60)
             };
     
@@ -44,11 +43,17 @@ function renderPage() {
                     }
                 })
                 
-            }
+            };
             checkifInView();
         });
         renderHomePage();
     } else {
+        function showNavBar() {
+            $("#navigation-bar nav").addClass("scrolled");
+            $("#navigation-bar .navbar-brand span").addClass("scrolled");
+            $("#navigation-bar .navbar-nav li a").addClass("scrolled");
+            $("#navigation-bar .navbar-nav i").addClass("scrolled");
+        }
         showNavBar();
         if($('#portfolio-page').length == 1) {
             renderPortfolio();
@@ -77,14 +82,6 @@ function renderHomePage() {
     renderEducationHistory();
     renderCourse();
     renderExperience();
-    
-}
-
-function showNavBar() {
-    $("#navigation-bar nav").addClass("scrolled");
-    $("#navigation-bar .navbar-brand span").addClass("scrolled");
-    $("#navigation-bar .navbar-nav li a").addClass("scrolled");
-    $("#navigation-bar .navbar-nav i").addClass("scrolled");
 }
 
 
@@ -165,13 +162,13 @@ function renderExperience() {
     let proContainer = $('#pro-card-container');
     let experiences = personalData["ProfessionalExperience"];
     let colorContainer = $('#pro-color-scheme-container');
-    let colors = [["#748392", "Internship"], ["#6D9599", "Volunteer"], ["#6895B3", "School Activity"]];
+    const colors = [["#748392", "Internship"], ["#6D9599", "Volunteer"], ["#6895B3", "School Activity"]];
     colors.forEach((color) => {
         colorContainer.append('<div class="pro-color-block-card"><div class="pro-color-block" style="background-color:'+ color[0] + ';"></div><span>' + color[1]+ '</span></div>')
     })
     experiences.forEach((experience) => {
         let card = $('<div class="pro-card revealOnScroll" style="border-left: 1vw solid ' + experience["categoryC"] + ';">')
-        if(experience["link"] !== "") {
+        if(experience["link"]) {
             let extlink = $('<a href="' + experience["link"] + '"><div class="pro-external-icon"><span class="icon-attachment" aria-hidden="true"></span></div></a>');
             $(card).append(extlink);
         }
@@ -190,17 +187,9 @@ function renderExperience() {
 
 function renderPortfolio() {
     let portfolio = $('#p-grid');
-    let projects = personalData["PastProjects"];
+    const projects = personalData["PastProjects"];
     projects.forEach((project) => {
-        let categories = ""
-        project["categories"].forEach((category) => {
-            if(categories === "") {
-                categories += category;
-            } else {
-                categories = categories + " " + category
-            }
-        })
-        let projectContainer = $('<li class="p-item" data-category="' + categories + '"></li>');
+        let projectContainer = $(`<li class="p-item" data-category="${project["categories"].map(category => category).join(" ")}"></li>`);
         let projectContent = $('<a href="' + project["link"] + '"></a>');
         let imgContainer = $('<div class="p-image"><img src="' +  project["img"] + '" alt="' + project["name"] + '"/></div>')
         let captionContainer =$(`<div class="p-caption">
